@@ -22,7 +22,12 @@ if [ "$(docker ps -aq -f status=exited -f name=${CONTAINER})" ]; then
 	docker rm $CONTAINER
 fi
 
-CMD="docker run -v ${SAMPLEPATH}:/data --name ${CONTAINER} pgcbioinfo/fastp fastp -i /data/${1}_R1_001.fastq.gz -I /data/${1}_R2_001.fastq.gz -o /data/${1}_R1_001.fp.fq.gz -O /data/${1}_R2_001.fp.fq.gz --adapter_fasta=/data/${1}.adapters.fa -f 6 -t 4 -c -g -x -p"
+CMD="docker run -v ${SAMPLEPATH}:/data --name ${CONTAINER} pgcbioinfo/fastp 
+fastp -i /data/${1}_R1_001.fastq.gz -I /data/${1}_R2_001.fastq.gz 
+-o /data/${1}_R1_001.fp.fq.gz -O /data/${1}_R2_001.fp.fq.gz 
+--json=/data/${1}.fastp.json --html=--json=/data/${1}.fastp.html
+--report_title='Отчёт fastp по образцу ${1}'
+--adapter_fasta=/data/${1}.adapters.fa -f 6 -t 4 -c -g -x -p"
 echo $CMD>>$LOGFILE
 $CMD 1>$OUTFILE 2>$ERRFILE
 
