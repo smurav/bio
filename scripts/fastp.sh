@@ -20,9 +20,9 @@ LOGFILE=$PREFIX.$CONTAINER.log
 
 # Каталог для сохранения результатов
 if [ -d $PREFIX ]; then
-	rm -rfv $PREFIX/*
+	rm -rfv "${PREFIX}/*"
 else
-	mkdir $PREFIX
+	mkdir "${PREFIX}"
 fi
 
 echo 'Контроль качества и обработка образца '$1 > $LOGFILE
