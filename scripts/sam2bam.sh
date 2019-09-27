@@ -39,7 +39,7 @@ if [ "$(docker ps -aq -f status=exited -f name=${CONTAINER})" ]; then
 fi
 
 VOLUME=$(printf %q "$SAMPLEPATH")
-CMD="docker run --name ${CONTAINER} -v ${VOLUME}:/data biocontainers/samtools:v1.7.0_cv4 samtools view -F 7 -b -o /data/${CONTAINER}/${1}.${ALIGNER}.bam /data/${ALIGNER}/${1}.${ALIGNER}.sam"
+CMD="docker run --name ${CONTAINER} -v ${VOLUME}:/data biocontainers/samtools:v1.7.0_cv4 samtools fixmate -@ 7 -r -O bam /data/${ALIGNER}/${1}.${ALIGNER}.sam /data/${CONTAINER}/${1}.${ALIGNER}.bam"
 echo $CMD>>"${LOGFILE}"
 bash -c "$CMD" 1>"${OUTFILE}" 2>"${ERRFILE}"
 
