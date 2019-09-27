@@ -39,7 +39,7 @@ pgcbioinfo/fastp fastp
 -O /data/${1}_R2_001.${CONTAINER}.fastq.gz 
 -j /data/${CONTAINER}/${1}.${CONTAINER}.json 
 -h /data/${CONTAINER}/${1}.${CONTAINER}.html
---adapter_fasta=/data/${CONTAINER}/${1}.adapters.fa -f 6 -t 4 -w 7 -c"
+--adapter_fasta=/data/${1}.adapters.fa -f 6 -t 4 -w 7 -c"
 echo $CMD>>$LOGFILE
 $CMD 1>$OUTFILE 2>$ERRFILE
 
