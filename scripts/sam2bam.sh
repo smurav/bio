@@ -7,20 +7,18 @@ if [ -z "$1" ]; then
     exit -1
 fi
 
+ALIGNER=bowtie2
+if [ ! -z "$2" ]; then
+    ALIGNER=$2
+fi
+
 START=$(date +%s)
 BASENAME=$(basename -- "$0")
 FILENAME="${BASENAME%.*}"
 SCRIPT=$(readlink -f $0)
 SCRIPTPATH=$(dirname "$SCRIPT")
 SAMPLEPATH=$(dirname "$SCRIPTPATH")/samples/$1
-PREFIX=$SAMPLEPATH/$CONTAINER
-
-ALIGNER=bowtie2
-if [ ! -z "$2" ]; then
-    ALIGNER=$2
-fi
-SAMPATH=$SAMPLEPATH/$ALIGNER
-
+PREFIX=$SAMPLEPATH/$CONTAINER_$ALIGNER
 OUTFILE=$PREFIX/$1.$CONTAINER.stdout
 ERRFILE=$PREFIX/$1.$CONTAINER.stderr
 LOGFILE=$PREFIX/$1.$CONTAINER.log
