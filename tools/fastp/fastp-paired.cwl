@@ -20,19 +20,24 @@ inputs:
       prefix: '--in2'
     label: Reverse read
     'sbg:fileTypes': 'FastQ, .fastq.gzip'
+  - id: custom_args
+    type: string?
+    inputBinding:
+      position: 11
+      shellQuote: false
+    label: Additional options
   - id: adapter1
     type: string?
     inputBinding:
       position: 10
+      prefix: '--adapter_sequence='
+      separate: false
   - id: adapter2
     type: string?
     inputBinding:
-      position: 11
-  - id: custom_args
-    type: string?
-    inputBinding:
-      position: 12
-    label: Additional options
+      position: 10
+      prefix: '--adapter_sequence_r2='
+      separate: false
 outputs:
   - id: out1_cleaned_fq
     label: Cleaned forward read
@@ -68,6 +73,10 @@ outputs:
     type: File
     outputBinding:
       glob: $(inputs.in1.basename + '.html')
+  - id: stdout
+    type: stdout
+  - id: stderr
+    type: stderr
 label: fastp
 arguments:
   - position: 0
@@ -91,15 +100,15 @@ arguments:
   - position: 8
     prefix: '--html'
     valueFrom: $(inputs.in1.basename + '.html')
-  - position: 9
-    prefix: '--adapter_sequence='
-    separate: false
-    valueFrom: inputs.adapter1
-  - position: 10
-    prefix: '--adapter_sequence_r2='
-    separate: false
-    valueFrom: inputs.adapter2
 requirements:
+  - class: ShellCommandRequirement
+  - class: ResourceRequirement
+    coresMax: 7
+  - class: ResourceRequirement
+    coresMin: 0
   - class: DockerRequirement
     dockerPull: 'pgcbioinfo/fastp:0.20.0'
   - class: InlineJavascriptRequirement
+    
+stdout: fastp.stdout
+stderr: fastp.stderr
