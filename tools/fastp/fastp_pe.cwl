@@ -38,6 +38,8 @@ inputs:
       position: 10
       prefix: '--adapter_sequence_r2='
       separate: false
+  - id: nthreads
+    type: int
 outputs:
   - id: out1_cleaned_fq
     label: Cleaned forward read
@@ -81,7 +83,7 @@ label: fastp
 arguments:
   - position: 0
     prefix: '-w'
-    valueFrom: $(runtime.cores)
+    valueFrom: $(inputs.nthreads)
   - position: 2
     prefix: '--out1'
     valueFrom: $(inputs.in1.nameroot + '.cleaned')

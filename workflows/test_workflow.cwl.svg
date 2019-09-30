@@ -1,0 +1,947 @@
+<svg xmlns="http://www.w3.org/2000/svg" class="cwl-workflow FfhViU __plugin-port-drag __plugin-validate __plugin-selection __plugin-update" ct-click="" tabindex="-1" ct-drop-enabled="" ct-drop-zones="graph-editor">
+            <rect x="0" y="0" width="100%" height="100%" class="pan-handle" transform="matrix(1,0,0,1,0,0)" style="fill:rgb(48, 48, 48); stroke:none; stroke-width:1px; "/>
+            <g class="workflow" transform="matrix(0.742539 0 0 0.742539 135.325 299.858)">
+            <g tabindex="-1" class="edge " data-source-port="in1" data-destination-port="in1" data-source-node="in1" data-source-connection="out/in1/in1" data-destination-connection="in/clean/in1" data-destination-node="clean">
+                <path class="sub-edge outer" d="M 37 214 C 78.79389190673828 214 78.79389190673828 413.0662565231323 120.58778381347656 413.0662565231323" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 37 214 C 78.79389190673828 214 78.79389190673828 413.0662565231323 120.58778381347656 413.0662565231323" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="in2" data-destination-port="in2" data-source-node="in2" data-source-connection="out/in2/in2" data-destination-connection="in/clean/in2" data-destination-node="clean">
+                <path class="sub-edge outer" d="M 37 107 C 83.90153121948242 107 83.90153121948242 385 130.80306243896484 385" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 37 107 C 83.90153121948242 107 83.90153121948242 385 130.80306243896484 385" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="fastp_custom_args" data-destination-port="custom_args" data-source-node="fastp_custom_args" data-source-connection="out/fastp_custom_args/fastp_custom_args" data-destination-connection="in/clean/custom_args" data-destination-node="clean">
+                <path class="sub-edge outer" d="M 37 321 C 78.79389190673828 321 78.79389190673828 442.9337434768677 120.58778381347656 442.9337434768677" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 37 321 C 78.79389190673828 321 78.79389190673828 442.9337434768677 120.58778381347656 442.9337434768677" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="adapter1" data-destination-port="adapter1" data-source-node="adapter1" data-source-connection="out/adapter1/adapter1" data-destination-connection="in/clean/adapter1" data-destination-node="clean">
+                <path class="sub-edge outer" d="M 37 535 C 93.50075721740723 535 93.50075721740723 493.87982177734375 150.00151443481445 493.87982177734375" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 37 535 C 93.50075721740723 535 93.50075721740723 493.87982177734375 150.00151443481445 493.87982177734375" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="adapter2" data-destination-port="adapter2" data-source-node="adapter2" data-source-connection="out/adapter2/adapter2" data-destination-connection="in/clean/adapter2" data-destination-node="clean">
+                <path class="sub-edge outer" d="M 37 428 C 83.90153121948242 428 83.90153121948242 471 130.80306243896484 471" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 37 428 C 83.90153121948242 428 83.90153121948242 471 130.80306243896484 471" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="nthreads" data-destination-port="nthreads" data-source-node="nthreads" data-source-connection="out/nthreads/nthreads" data-destination-connection="in/clean/nthreads" data-destination-node="clean">
+                <path class="sub-edge outer" d="M 14.105585301647434 -88.8841982406629 C 82.05354986823095 -88.8841982406629 82.05354986823095 362.12017822265625 150.00151443481445 362.12017822265625" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 14.105585301647434 -88.8841982406629 C 82.05354986823095 -88.8841982406629 82.05354986823095 362.12017822265625 150.00151443481445 362.12017822265625" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="hisat2_sam" data-destination-port="sam" data-source-node="map" data-source-connection="out/map/hisat2_sam" data-destination-connection="in/fixmate/sam" data-destination-node="fixmate">
+                <path class="sub-edge outer" d="M 694.856749375361 49.023662214059385 C 780.2540998706555 49.023662214059385 780.2540998706555 276.18868982472134 865.65145036595 276.18868982472134" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 694.856749375361 49.023662214059385 C 780.2540998706555 49.023662214059385 780.2540998706555 276.18868982472134 865.65145036595 276.18868982472134" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="out1_cleaned_fq" data-destination-port="fq1" data-source-node="clean" data-source-connection="out/clean/out1_cleaned_fq" data-destination-connection="in/map/fq1" data-destination-node="map">
+                <path class="sub-edge outer" d="M 255.28956985473633 497.9654769897461 C 422.443332115659 497.9654769897461 422.443332115659 62.88135874726251 589.5970943765817 62.88135874726251" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 255.28956985473633 497.9654769897461 C 422.443332115659 497.9654769897461 422.443332115659 62.88135874726251 589.5970943765817 62.88135874726251" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="out2_cleaned_fq" data-destination-port="fq2" data-source-node="clean" data-source-connection="out/clean/out2_cleaned_fq" data-destination-connection="in/map/fq2" data-destination-node="map">
+                <path class="sub-edge outer" d="M 284.2478332519531 462.06286239624023 C 428.88590375567367 462.06286239624023 428.88590375567367 43.72615778901056 573.5239742593942 43.72615778901056" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 284.2478332519531 462.06286239624023 C 428.88590375567367 462.06286239624023 428.88590375567367 43.72615778901056 573.5239742593942 43.72615778901056" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="hisat2_idx_basedir" data-destination-port="hisat2_idx_basedir" data-source-node="hisat2_idx_basedir" data-source-connection="out/hisat2_idx_basedir/hisat2_idx_basedir" data-destination-connection="in/map/hisat2_idx_basedir" data-destination-node="map">
+                <path class="sub-edge outer" d="M 242.28125 272 C 403.6264471211522 272 403.6264471211522 20.22882616974786 564.9716442423044 20.22882616974786" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 242.28125 272 C 403.6264471211522 272 403.6264471211522 20.22882616974786 564.9716442423044 20.22882616974786" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="hisat2_idx_basename" data-destination-port="hisat2_idx_basename" data-source-node="hisat2_idx_basename" data-source-connection="out/hisat2_idx_basename/hisat2_idx_basename" data-destination-connection="in/map/hisat2_idx_basename" data-destination-node="map">
+                <path class="sub-edge outer" d="M 234.2008683417579 147.49250640714214 C 399.5862562920312 147.49250640714214 399.5862562920311 -4.776510591726748 564.9716442423044 -4.776510591726748" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 234.2008683417579 147.49250640714214 C 399.5862562920312 147.49250640714214 399.5862562920311 -4.776510591726748 564.9716442423044 -4.776510591726748" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="nthreads" data-destination-port="nthreads" data-source-node="nthreads" data-source-connection="out/nthreads/nthreads" data-destination-connection="in/map/nthreads" data-destination-node="map">
+                <path class="sub-edge outer" d="M 14.105585301647434 -88.8841982406629 C 293.8147797805208 -88.8841982406629 293.81477978052084 -28.273842210989443 573.5239742593942 -28.273842210989443" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 14.105585301647434 -88.8841982406629 C 293.8147797805208 -88.8841982406629 293.81477978052084 -28.273842210989443 573.5239742593942 -28.273842210989443" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="hisat2_out_sam_name" data-destination-port="out_sam_name" data-source-node="hisat2_out_sam_name" data-source-connection="out/hisat2_out_sam_name/hisat2_out_sam_name" data-destination-connection="in/map/out_sam_name" data-destination-node="map">
+                <path class="sub-edge outer" d="M 224.77375640714214 4.130788945052814 C 407.18542539186194 4.130788945052814 407.18542539186194 -47.429043169241396 589.5970943765817 -47.429043169241396" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 224.77375640714214 4.130788945052814 C 407.18542539186194 4.130788945052814 407.18542539186194 -47.429043169241396 589.5970943765817 -47.429043169241396" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="bam" data-destination-port="bam_unsorted" data-source-node="fixmate" data-source-connection="out/fixmate/bam" data-destination-connection="in/sort/bam_unsorted" data-destination-node="sort">
+                <path class="sub-edge outer" d="M 958.4282028378739 305.4410873619528 C 1132.5100910483457 305.4410873619528 1132.5100910483457 427.96662776209917 1306.5919792588177 427.96662776209917" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 958.4282028378739 305.4410873619528 C 1132.5100910483457 305.4410873619528 1132.5100910483457 427.96662776209917 1306.5919792588177 427.96662776209917" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="report_html" data-destination-port="fastp_report_html" data-source-node="clean" data-source-connection="out/clean/report_html" data-destination-connection="in/fastp_report_html/fastp_report_html" data-destination-node="fastp_report_html">
+                <path class="sub-edge outer" d="M 290.4900817871094 416.3615083694458 C 432.56336975097656 416.3615083694458 432.56336975097656 481.5 574.6366577148438 481.5" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 290.4900817871094 416.3615083694458 C 432.56336975097656 416.3615083694458 432.56336975097656 481.5 574.6366577148438 481.5" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="report_json" data-destination-port="fastp_report_json" data-source-node="clean" data-source-connection="out/clean/report_json" data-destination-connection="in/fastp_report_json/fastp_report_json" data-destination-node="fastp_report_json">
+                <path class="sub-edge outer" d="M 284.2478332519531 393.93713760375977 C 429.44224548339844 393.93713760375977 429.44224548339844 374.5 574.6366577148438 374.5" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 284.2478332519531 393.93713760375977 C 429.44224548339844 393.93713760375977 429.44224548339844 374.5 574.6366577148438 374.5" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge __validate-invalid" data-source-port="stderr" data-destination-port="fastp_stderr" data-source-node="clean" data-source-connection="out/clean/stderr" data-destination-connection="in/fastp_stderr/fastp_stderr" data-destination-node="fastp_stderr">
+                <path class="sub-edge outer" d="M 272.2206344604492 374.0081558227539 C 423.4286460876465 374.0081558227539 423.4286460876465 267.5 574.6366577148438 267.5" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 272.2206344604492 374.0081558227539 C 423.4286460876465 374.0081558227539 423.4286460876465 267.5 574.6366577148438 267.5" style="fill:none; stroke:rgb(248, 148, 6); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge __validate-invalid" data-source-port="stdout" data-destination-port="fastp_stdout" data-source-node="clean" data-source-connection="out/clean/stdout" data-destination-connection="in/fastp_stdout/fastp_stdout" data-destination-node="fastp_stdout">
+                <path class="sub-edge outer" d="M 255.28956985473633 358.0345230102539 C 414.96311378479004 358.0345230102539 414.96311378479004 160.5 574.6366577148438 160.5" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 255.28956985473633 358.0345230102539 C 414.96311378479004 358.0345230102539 414.96311378479004 160.5 574.6366577148438 160.5" style="fill:none; stroke:rgb(248, 148, 6); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge __validate-invalid" data-source-port="stderr" data-destination-port="hisat2_stderr" data-source-node="map" data-source-connection="out/map/stderr" data-destination-connection="in/hisat2_stderr/hisat2_stderr" data-destination-node="hisat2_stderr">
+                <path class="sub-edge outer" d="M 707.87780268957 7.726157789010557 C 786.3576100077048 7.726157789010557 786.3576100077048 -33.35354886759387 864.8374173258396 -33.35354886759387" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 707.87780268957 7.726157789010557 C 786.3576100077048 7.726157789010557 786.3576100077048 -33.35354886759387 864.8374173258396 -33.35354886759387" style="fill:none; stroke:rgb(248, 148, 6); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge __validate-invalid" data-source-port="stdout" data-destination-port="hisat2_stdout" data-source-node="map" data-source-connection="out/map/stdout" data-destination-connection="in/hisat2_stdout/hisat2_stdout" data-destination-node="hisat2_stdout">
+                <path class="sub-edge outer" d="M 694.856749375361 -33.57134663603827 C 781.8671787651608 -33.57134663603827 781.8671787651608 -161.90123328957276 868.8776081549606 -161.90123328957276" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 694.856749375361 -33.57134663603827 C 781.8671787651608 -33.57134663603827 781.8671787651608 -161.90123328957276 868.8776081549606 -161.90123328957276" style="fill:none; stroke:rgb(248, 148, 6); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge __validate-invalid" data-source-port="stderr" data-destination-port="samtools_fixmate_stderr" data-source-node="fixmate" data-source-connection="out/fixmate/stderr" data-destination-connection="in/samtools_fixmate_stderr/samtools_fixmate_stderr" data-destination-node="samtools_fixmate_stderr">
+                <path class="sub-edge outer" d="M 967.65145036595 276.18868982472134 C 1051.1973257425998 276.18868982472134 1051.1973257425998 208.85217600603733 1134.7432011192498 208.85217600603733" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 967.65145036595 276.18868982472134 C 1051.1973257425998 276.18868982472134 1051.1973257425998 208.85217600603733 1134.7432011192498 208.85217600603733" style="fill:none; stroke:rgb(248, 148, 6); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge __validate-invalid" data-source-port="stdout" data-destination-port="samtools_fixmate_stdout" data-source-node="fixmate" data-source-connection="out/fixmate/stdout" data-destination-connection="in/samtools_fixmate_stdout/samtools_fixmate_stdout" data-destination-node="samtools_fixmate_stdout">
+                <path class="sub-edge outer" d="M 958.4282028378739 246.9362922874899 C 1049.2791625313093 246.9362922874899 1049.2791625313093 89.7316035186742 1140.1301222247446 89.7316035186742" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 958.4282028378739 246.9362922874899 C 1049.2791625313093 246.9362922874899 1049.2791625313093 89.7316035186742 1140.1301222247446 89.7316035186742" style="fill:none; stroke:rgb(248, 148, 6); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge " data-source-port="bam_sorted" data-destination-port="samtools_sort_bam" data-source-node="sort" data-source-connection="out/sort/bam_sorted" data-destination-connection="in/samtools_sort_bam/samtools_sort_bam" data-destination-node="samtools_sort_bam">
+                <path class="sub-edge outer" d="M 1399.3687317307415 457.2190252993306 C 1526.7926388821782 457.2190252993306 1526.7926388821782 476.85150100439967 1654.2165460336148 476.85150100439967" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 1399.3687317307415 457.2190252993306 C 1526.7926388821782 457.2190252993306 1526.7926388821782 476.85150100439967 1654.2165460336148 476.85150100439967" style="fill:none; stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge __validate-invalid" data-source-port="stderr" data-destination-port="samtools_sort_stderr" data-source-node="sort" data-source-connection="out/sort/stderr" data-destination-connection="in/samtools_sort_stderr/samtools_sort_stderr" data-destination-node="samtools_sort_stderr">
+                <path class="sub-edge outer" d="M 1408.5919792588177 427.96662776209917 C 1531.4042626462162 427.96662776209917 1531.4042626462162 350.9972771351682 1654.2165460336148 350.9972771351682" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 1408.5919792588177 427.96662776209917 C 1531.4042626462162 427.96662776209917 1531.4042626462162 350.9972771351682 1654.2165460336148 350.9972771351682" style="fill:none; stroke:rgb(248, 148, 6); stroke-width:2px; "/>
+            </g>
+        
+            <g tabindex="-1" class="edge __validate-invalid" data-source-port="stdout" data-destination-port="samtools_sort_stdout" data-source-node="sort" data-source-connection="out/sort/stdout" data-destination-connection="in/samtools_sort_stdout/samtools_sort_stdout" data-destination-node="samtools_sort_stdout">
+                <path class="sub-edge outer" d="M 1399.3687317307415 398.7142302248677 C 1522.0790829148702 398.7142302248677 1522.0790829148702 195.51498718571568 1644.789434098999 195.51498718571568" style="fill:none; stroke:rgb(48, 48, 48); stroke-width:7px; "/>
+                <path class="sub-edge inner" d="M 1399.3687317307415 398.7142302248677 C 1522.0790829148702 398.7142302248677 1522.0790829148702 195.51498718571568 1644.789434098999 195.51498718571568" style="fill:none; stroke:rgb(248, 148, 6); stroke-width:2px; "/>
+            </g>
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        
+            
+        <g tabindex="-1" class="node input type-string " data-connection-id="out/adapter1/adapter1" transform="matrix(1, 0, 0, 1, 0, 535)" data-id="adapter1">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 365" x="-11" y="-10" width="20" height="20"><title>type_input</title><g id="input"><path d="M316.5,68a181.72,181.72,0,0,0-114.12,40.09L238,143.72a132.5,132.5,0,1,1,1.16,214.39L203.48,393.8A182.5,182.5,0,1,0,316.5,68Z" transform="translate(0 -68)" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/><g id="Layer_22" data-name="Layer 22"><g id="Layer_9_copy_4" data-name="Layer 9 copy 4"><polygon points="290.36 182 176.68 295.68 141.32 260.32 194.64 207 0 207 0 157 194.64 157 142.32 104.68 177.68 69.32 290.36 182" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/></g></g></g></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">adapter1</text>
+                
+                
+                
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 37, 0)" data-connection-id="out/adapter1/adapter1" data-port-id="adapter1">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/fastp_stdout/fastp_stdout" transform="matrix(1, 0, 0, 1, 611.6366577148438, 160.5)" data-id="fastp_stdout">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">fastp_stdout</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/fastp_stdout/fastp_stdout" data-port-id="fastp_stdout">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/fastp_stderr/fastp_stderr" transform="matrix(1, 0, 0, 1, 611.6366577148438, 267.5)" data-id="fastp_stderr">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">fastp_stderr</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/fastp_stderr/fastp_stderr" data-port-id="fastp_stderr">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g><g tabindex="-1" class="node input type-string " data-connection-id="out/hisat2_idx_basename/hisat2_idx_basename" transform="translate(197.201 147.493)" data-id="hisat2_idx_basename">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 365" x="-11" y="-10" width="20" height="20"><title>type_input</title><g id="input"><path d="M316.5,68a181.72,181.72,0,0,0-114.12,40.09L238,143.72a132.5,132.5,0,1,1,1.16,214.39L203.48,393.8A182.5,182.5,0,1,0,316.5,68Z" transform="translate(0 -68)" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/><g id="Layer_22" data-name="Layer 22"><g id="Layer_9_copy_4" data-name="Layer 9 copy 4"><polygon points="290.36 182 176.68 295.68 141.32 260.32 194.64 207 0 207 0 157 194.64 157 142.32 104.68 177.68 69.32 290.36 182" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/></g></g></g></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">hisat2_idx_basename</text>
+                
+                
+                
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 37, 0)" data-connection-id="out/hisat2_idx_basename/hisat2_idx_basename" data-port-id="hisat2_idx_basename">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node input type-int" data-connection-id="out/nthreads/nthreads" transform="translate(-22.8944 -88.8842)" data-id="nthreads">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 365" x="-11" y="-10" width="20" height="20"><title>type_input</title><g id="input"><path d="M316.5,68a181.72,181.72,0,0,0-114.12,40.09L238,143.72a132.5,132.5,0,1,1,1.16,214.39L203.48,393.8A182.5,182.5,0,1,0,316.5,68Z" transform="translate(0 -68)" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/><g id="Layer_22" data-name="Layer 22"><g id="Layer_9_copy_4" data-name="Layer 9 copy 4"><polygon points="290.36 182 176.68 295.68 141.32 260.32 194.64 207 0 207 0 157 194.64 157 142.32 104.68 177.68 69.32 290.36 182" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/></g></g></g></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">nthreads</text>
+                
+                
+                
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 37, 0)" data-connection-id="out/nthreads/nthreads" data-port-id="nthreads">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node input type-string " data-connection-id="out/adapter2/adapter2" transform="matrix(1, 0, 0, 1, 0, 428)" data-id="adapter2">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 365" x="-11" y="-10" width="20" height="20"><title>type_input</title><g id="input"><path d="M316.5,68a181.72,181.72,0,0,0-114.12,40.09L238,143.72a132.5,132.5,0,1,1,1.16,214.39L203.48,393.8A182.5,182.5,0,1,0,316.5,68Z" transform="translate(0 -68)" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/><g id="Layer_22" data-name="Layer 22"><g id="Layer_9_copy_4" data-name="Layer 9 copy 4"><polygon points="290.36 182 176.68 295.68 141.32 260.32 194.64 207 0 207 0 157 194.64 157 142.32 104.68 177.68 69.32 290.36 182" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/></g></g></g></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">adapter2</text>
+                
+                
+                
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 37, 0)" data-connection-id="out/adapter2/adapter2" data-port-id="adapter2">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node input type-string " data-connection-id="out/fastp_custom_args/fastp_custom_args" transform="matrix(1, 0, 0, 1, 0, 321)" data-id="fastp_custom_args">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 365" x="-11" y="-10" width="20" height="20"><title>type_input</title><g id="input"><path d="M316.5,68a181.72,181.72,0,0,0-114.12,40.09L238,143.72a132.5,132.5,0,1,1,1.16,214.39L203.48,393.8A182.5,182.5,0,1,0,316.5,68Z" transform="translate(0 -68)" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/><g id="Layer_22" data-name="Layer 22"><g id="Layer_9_copy_4" data-name="Layer 9 copy 4"><polygon points="290.36 182 176.68 295.68 141.32 260.32 194.64 207 0 207 0 157 194.64 157 142.32 104.68 177.68 69.32 290.36 182" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/></g></g></g></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">fastp_custom_args</text>
+                
+                
+                
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 37, 0)" data-connection-id="out/fastp_custom_args/fastp_custom_args" data-port-id="fastp_custom_args">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node input type-File " data-connection-id="out/in1/in1" transform="matrix(1, 0, 0, 1, 0, 214)" data-id="in1">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" y="-10" x="-11" width="20" height="20"><title>file_input</title><path d="M386.06,0H175V58.29l50,50V50H337.81V163.38h25l86.19.24V412.86H225V353.71l-50,50v59.15H499V112.94Zm1.75,113.45v-41l41.1,41.1Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="290.36 231 176.68 344.68 141.32 309.32 194.64 256 0 256 0 206 194.64 206 142.32 153.68 177.68 118.32 290.36 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">in1</text>
+                
+                
+                
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 37, 0)" data-connection-id="out/in1/in1" data-port-id="in1">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node input type-File " data-connection-id="out/in2/in2" transform="matrix(1, 0, 0, 1, 0, 107)" data-id="in2">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" y="-10" x="-11" width="20" height="20"><title>file_input</title><path d="M386.06,0H175V58.29l50,50V50H337.81V163.38h25l86.19.24V412.86H225V353.71l-50,50v59.15H499V112.94Zm1.75,113.45v-41l41.1,41.1Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="290.36 231 176.68 344.68 141.32 309.32 194.64 256 0 256 0 206 194.64 206 142.32 153.68 177.68 118.32 290.36 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">in2</text>
+                
+                
+                
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 37, 0)" data-connection-id="out/in2/in2" data-port-id="in2">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node step  " data-connection-id="fixmate" transform="translate(916.651 276.189)" data-id="fixmate">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="51" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="38.25" class="inner" style="fill:rgb(17, 167, 167); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.39 397.78" x="-10" y="-8" width="20" height="15"><title>tool2</title><polygon points="38.77 397.57 0 366 136.15 198.78 0 31.57 38.77 0 200.63 198.78 38.77 397.57" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><rect x="198.39" y="347.78" width="200" height="50" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 81)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">fixmate</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -51, 6.245698675651501e-15)" data-connection-id="in/fixmate/sam" data-port-id="sam">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            <g class="port output-port" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 41.776754258738585, -29.252398253903348)" data-connection-id="out/fixmate/stdout" data-port-id="stdout">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 51, 0)" data-connection-id="out/fixmate/stderr" data-port-id="stderr">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 41.776754258738585, 29.252398253903348)" data-connection-id="out/fixmate/bam" data-port-id="bam">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/samtools_fixmate_stdout/samtools_fixmate_stdout" transform="translate(1177.13 89.7316)" data-id="samtools_fixmate_stdout">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">samtools_fixmate_stdout</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/samtools_fixmate_stdout/samtools_fixmate_stdout" data-port-id="samtools_fixmate_stdout">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g><g tabindex="-1" class="node step  " data-connection-id="sort" transform="translate(1357.59 427.967)" data-id="sort">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="51" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="38.25" class="inner" style="fill:rgb(17, 167, 167); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.39 397.78" x="-10" y="-8" width="20" height="15"><title>tool2</title><polygon points="38.77 397.57 0 366 136.15 198.78 0 31.57 38.77 0 200.63 198.78 38.77 397.57" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><rect x="198.39" y="347.78" width="200" height="50" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 81)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">sort</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -51, 6.245698675651501e-15)" data-connection-id="in/sort/bam_unsorted" data-port-id="bam_unsorted">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            <g class="port output-port" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 41.776754258738585, -29.252398253903348)" data-connection-id="out/sort/stdout" data-port-id="stdout">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 51, 0)" data-connection-id="out/sort/stderr" data-port-id="stderr">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 41.776754258738585, 29.252398253903348)" data-connection-id="out/sort/bam_sorted" data-port-id="bam_sorted">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/samtools_sort_stdout/samtools_sort_stdout" transform="translate(1681.79 195.515)" data-id="samtools_sort_stdout">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">samtools_sort_stdout</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/samtools_sort_stdout/samtools_sort_stdout" data-port-id="samtools_sort_stdout">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/fastp_report_json/fastp_report_json" transform="matrix(1, 0, 0, 1, 611.6366577148438, 374.5)" data-id="fastp_report_json">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">fastp_report_json</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/fastp_report_json/fastp_report_json" data-port-id="fastp_report_json">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g><g tabindex="-1" class="node input type-Directory " data-connection-id="out/hisat2_idx_basedir/hisat2_idx_basedir" transform="matrix(1, 0, 0, 1, 205.28125, 272)" data-id="hisat2_idx_basedir">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 365" x="-11" y="-10" width="20" height="20"><title>type_input</title><g id="input"><path d="M316.5,68a181.72,181.72,0,0,0-114.12,40.09L238,143.72a132.5,132.5,0,1,1,1.16,214.39L203.48,393.8A182.5,182.5,0,1,0,316.5,68Z" transform="translate(0 -68)" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/><g id="Layer_22" data-name="Layer 22"><g id="Layer_9_copy_4" data-name="Layer 9 copy 4"><polygon points="290.36 182 176.68 295.68 141.32 260.32 194.64 207 0 207 0 157 194.64 157 142.32 104.68 177.68 69.32 290.36 182" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/></g></g></g></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">hisat2_idx_basedir</text>
+                
+                
+                
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 37, 0)" data-connection-id="out/hisat2_idx_basedir/hisat2_idx_basedir" data-port-id="hisat2_idx_basedir">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node step  " data-connection-id="clean" transform="matrix(1, 0, 0, 1, 205.28125, 428)" data-id="clean">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="86" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="64.5" class="inner" style="fill:rgb(17, 167, 167); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.39 397.78" x="-10" y="-8" width="20" height="15"><title>tool2</title><polygon points="38.77 397.57 0 366 136.15 198.78 0 31.57 38.77 0 200.63 198.78 38.77 397.57" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><rect x="198.39" y="347.78" width="200" height="50" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 116)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">fastp</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -55.27973443304239, -65.8798221082321)" data-connection-id="in/clean/nthreads" data-port-id="nthreads">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -74.47818472546172, -43.00000000000001)" data-connection-id="in/clean/in2" data-port-id="in2">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -84.69346675904988, -14.93374327935602)" data-connection-id="in/clean/in1" data-port-id="in1">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port input-port" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, -84.69346675904988, 14.933743279356003)" data-connection-id="in/clean/custom_args" data-port-id="custom_args">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -74.47818472546173, 42.99999999999999)" data-connection-id="in/clean/adapter2" data-port-id="adapter2">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -55.279734433042385, 65.8798221082321)" data-connection-id="in/clean/adapter1" data-port-id="adapter1">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 50.00832020109626, -69.96547656283511)" data-connection-id="out/clean/stdout" data-port-id="stdout">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 66.93938202606395, -53.99184321699591)" data-connection-id="out/clean/stderr" data-port-id="stderr">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 78.96658481372488, -34.062860755620555)" data-connection-id="out/clean/report_json" data-port-id="report_json">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 85.20883471090113, -11.638491620924569)" data-connection-id="out/clean/report_html" data-port-id="report_html">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 85.20883471090113, 11.638491620924569)" data-connection-id="out/clean/out2_unpaired_fq" data-port-id="out2_unpaired_fq">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 78.96658481372488, 34.062860755620555)" data-connection-id="out/clean/out2_cleaned_fq" data-port-id="out2_cleaned_fq">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 66.93938202606395, 53.99184321699591)" data-connection-id="out/clean/out1_unpaired_fq" data-port-id="out1_unpaired_fq">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 50.00832020109626, 69.96547656283511)" data-connection-id="out/clean/out1_cleaned_fq" data-port-id="out1_cleaned_fq">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node input type-string " data-connection-id="out/hisat2_out_sam_name/hisat2_out_sam_name" transform="translate(187.774 4.1308)" data-id="hisat2_out_sam_name">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 365" x="-11" y="-10" width="20" height="20"><title>type_input</title><g id="input"><path d="M316.5,68a181.72,181.72,0,0,0-114.12,40.09L238,143.72a132.5,132.5,0,1,1,1.16,214.39L203.48,393.8A182.5,182.5,0,1,0,316.5,68Z" transform="translate(0 -68)" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/><g id="Layer_22" data-name="Layer 22"><g id="Layer_9_copy_4" data-name="Layer 9 copy 4"><polygon points="290.36 182 176.68 295.68 141.32 260.32 194.64 207 0 207 0 157 194.64 157 142.32 104.68 177.68 69.32 290.36 182" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/></g></g></g></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">hisat2_out_sam_name</text>
+                
+                
+                
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 37, 0)" data-connection-id="out/hisat2_out_sam_name/hisat2_out_sam_name" data-port-id="hisat2_out_sam_name">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node step  " data-connection-id="map" transform="translate(635.878 7.72616)" data-id="map">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="72" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="54" class="inner" style="fill:rgb(17, 167, 167); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 398.39 397.78" x="-10" y="-8" width="20" height="15"><title>tool2</title><polygon points="38.77 397.57 0 366 136.15 198.78 0 31.57 38.77 0 200.63 198.78 38.77 397.57" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><rect x="198.39" y="347.78" width="200" height="50" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 102)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">HISAT2: graph-based alignment of next generation sequencing reads to a population of genomes [cwl for paired end read]</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -46.280707897430844, -55.15519990456641)" data-connection-id="in/map/out_sam_name" data-port-id="out_sam_name">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -62.35382907247958, -36.00000000000001)" data-connection-id="in/map/nthreads" data-port-id="nthreads">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -70.90615821687898, -12.502668792018994)" data-connection-id="in/map/hisat2_idx_basename" data-port-id="hisat2_idx_basename">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port input-port" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, -70.90615821687898, 12.50266879201898)" data-connection-id="in/map/hisat2_idx_basedir" data-port-id="hisat2_idx_basedir">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -62.353829072479584, 35.99999999999999)" data-connection-id="in/map/fq2" data-port-id="fq2">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -46.28070789743084, 55.155199904566416)" data-connection-id="in/map/fq1" data-port-id="fq1">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            <g class="port output-port" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 58.97894718880741, -41.297503417275315)" data-connection-id="out/map/stdout" data-port-id="stdout">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(1, 0, 0, 1, 72, 0)" data-connection-id="out/map/stderr" data-port-id="stderr">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            <g class="port output-port" transform="matrix(0.9999999999999999, 0, 0, 0.9999999999999999, 58.97894718880741, 41.297503417275315)" data-connection-id="out/map/hisat2_sam" data-port-id="hisat2_sam">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/hisat2_stdout/hisat2_stdout" transform="translate(905.878 -161.901)" data-id="hisat2_stdout">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">hisat2_stdout</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/hisat2_stdout/hisat2_stdout" data-port-id="hisat2_stdout">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/hisat2_stderr/hisat2_stderr" transform="translate(901.837 -33.3535)" data-id="hisat2_stderr">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">hisat2_stderr</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/hisat2_stderr/hisat2_stderr" data-port-id="hisat2_stderr">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/samtools_fixmate_stderr/samtools_fixmate_stderr" transform="translate(1171.74 208.852)" data-id="samtools_fixmate_stderr">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">samtools_fixmate_stderr</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/samtools_fixmate_stderr/samtools_fixmate_stderr" data-port-id="samtools_fixmate_stderr">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/fastp_report_html/fastp_report_html" transform="matrix(1, 0, 0, 1, 611.6366577148438, 481.5)" data-id="fastp_report_html">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">fastp_report_html</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/fastp_report_html/fastp_report_html" data-port-id="fastp_report_html">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/samtools_sort_stderr/samtools_sort_stderr" transform="translate(1691.22 350.997)" data-id="samtools_sort_stderr">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">samtools_sort_stderr</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/samtools_sort_stderr/samtools_sort_stderr" data-port-id="samtools_sort_stderr">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g><g tabindex="-1" class="node output type-File " data-connection-id="in/samtools_sort_bam/samtools_sort_bam" transform="translate(1691.22 476.852)" data-id="samtools_sort_bam">
+               
+                <g class="core" transform="matrix(1, 0, 0, 1, 0, 0)">
+                    <circle cx="0" cy="0" r="37" class="outer" style="fill:rgb(48, 48, 48); stroke:rgb(154, 154, 154); stroke-width:2px; "/>
+                    <circle cx="0" cy="0" r="27.75" class="inner" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                    
+                    <svg class="node-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 499 462.86" x="-7" y="-11" width="20" height="20"><title>file_output</title><polygon points="387.81 1.06 387.81 1.75 387.12 1.06 387.81 1.06" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><polygon points="499 231 385.32 344.68 349.96 309.32 403.28 256 208.64 256 208.64 206 403.28 206 350.96 153.68 386.32 118.32 499 231" style="stroke:rgb(48, 48, 48); fill:rgb(48, 48, 48); "/><path d="M187.81,163.38l77.69.22H324V112.94L211.06,0H0V462.86H324V298.5H274V412.86H50V50H162.81V163.38Zm25-90.92,41.1,41.1-41.1-.11Z" style="fill:rgb(48, 48, 48); stroke:rgb(48, 48, 48); stroke-width:3px; "/></svg>
+                </g>
+                
+                <text transform="matrix(1.17337 0 0 1.17337 0 67)" class="title label" style="fill:rgb(255, 255, 255); font-size:13px; text-anchor:middle; font-family:sans-serif; ">samtools_sort_bam</text>
+                
+                
+            <g class="port input-port" transform="matrix(1, 0, 0, 1, -37, 4.531193156845207e-15)" data-connection-id="in/samtools_sort_bam/samtools_sort_bam" data-port-id="samtools_sort_bam">
+                <g class="io-port">
+                    <circle cx="0" cy="0" r="7" class="port-handle" style="fill:rgb(195, 195, 195); stroke:none; stroke-width:1px; "/>
+                </g>
+                
+            </g>
+            
+        
+                
+            </g></g>
+        </svg>
