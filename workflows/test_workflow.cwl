@@ -4,14 +4,14 @@ cwlVersion: v1.0
 class: Workflow
 
 inputs:
-  in1:
-    type: File
-  in2:
-    type: File
+  sample:
+    type: string
+  data_dir:
+    type: Directory
   adapter1:
-    type: string?
+    type: string
   adapter2:
-    type: string?
+    type: string
   fastp_custom_args:
     type: string?
   hisat2_idx_basedir: 
@@ -22,7 +22,15 @@ inputs:
     type: string?
   nthreads:
     type: int
-
+  reference:
+    type: File
+    secondaryFiles: .fai
+  filter_expression:
+    type: string
+  dbsnp:
+    type: File
+  dict:
+    type: File
 outputs:
   #fastp_out1_cleaned_fq:
     #type: File
@@ -67,9 +75,9 @@ outputs:
   samtools_fixmate_stderr:
     type: File
     outputSource: fixmate/stderr
-  samtools_sort_bam:
-    type: File
-    outputSource: sort/bam_sorted
+#  samtools_sort_bam:
+#    type: File
+#    outputSource: sort/bam_sorted
   samtools_sort_stdout:
     type: File
     outputSource: sort/stdout
@@ -77,13 +85,70 @@ outputs:
     type: File
     outputSource: sort/stderr
     
+# Результаты удаления дубликатов и индекс
+  gatk_markdup_output:
+    type: File
+    outputSource: markdup/markdup_output
+  gatk_markdup_metrics:
+    type: File
+    outputSource: markdup/markdup_metrics
+  gatk_markdup_index:
+    type: File
+    outputSource: markdup/markdup_index
+  gatk_markdup_stdout:
+    type: File
+    outputSource: markdup/stdout
+  gatk_markdup_stderr:
+    type: File
+    outputSource: markdup/stderr
+    
+# Поиск вариантов
+#  bcftools_mpileup_output:
+#    type: File
+#    outputSource: mpileup/outputFile
+  bcftools_mpileup_stderr:
+    type: File
+    outputSource: mpileup/stderr
+#  bcftools_call_output:
+#    type: File
+#    outputSource: call/outputFile
+  bcftools_call_stderr:
+    type: File
+    outputSource: call/stderr
+#  filter_output:
+#    type: File
+#    outputSource: filter/outputFile
+  filter_stdout:
+    type: File
+    outputSource: filter/stdout
+  filter_stderr:
+    type: File
+    outputSource: filter/stderr     
+  tbi_output:
+    type: File
+    outputSource: tbi/outputFile
+  tbi_stdout:
+    type: File
+    outputSource: tbi/stdout
+  tbi_stderr:
+    type: File
+    outputSource: tbi/stderr    
+  annotate_output:
+    type: File
+    outputSource: annotate/outputFile
+  annotate_stdout:
+    type: File
+    outputSource: annotate/stdout
+  annotate_stderr:
+    type: File
+    outputSource: annotate/stderr         
 steps:
   clean:
     run: ../tools/fastp/fastp_pe.cwl
     in:
       nthreads: nthreads
-      in1: in1
-      in2: in2
+      sample: sample
+      data_dir: data_dir
       adapter1: adapter1
       adapter2: adapter2
       custom_args: fastp_custom_args
@@ -98,7 +163,7 @@ steps:
       hisat2_idx_basename: hisat2_idx_basename
       fq1: clean/out1_cleaned_fq
       fq2: clean/out2_cleaned_fq
-      out_sam_name: hisat2_out_sam_name
+      sample: sample
       nthreads: nthreads
     out: ['hisat2_sam', 'stdout', 'stderr']
 
@@ -107,9 +172,54 @@ steps:
     in:
       sam: map/hisat2_sam
     out: ['bam', 'stdout', 'stderr']
-    
+
+# Сортировка
   sort:
     run: ../tools/samtools/samtools_sort.cwl
     in:
       bam_unsorted: fixmate/bam
     out: ['bam_sorted', 'stdout', 'stderr']
+
+# Удаление дубликатов
+  markdup:
+    run: ../tools/gatk/gatk_markdup.cwl
+    in:
+      inputFile: sort/bam_sorted
+    out: ['markdup_output', 'markdup_metrics', 'markdup_index', 'stdout', 'stderr']
+
+# Поиск вариантов
+  mpileup:
+    run: ../tools/bcftools/bcftools_mpileup.cwl
+    in:
+      inputFile: markdup/markdup_output
+      reference: reference
+    out: ['outputFile', 'stderr']
+  call:
+    run: ../tools/bcftools/bcftools_call.cwl
+    in:
+      inputFile: mpileup/outputFile
+      nthreads: nthreads
+    out: ['outputFile', 'stderr']
+  filter:
+    run: ../tools/bcftools/bcftools_view.cwl
+    in:
+      inputFile: call/outputFile
+      include_expression: filter_expression
+      nthreads: nthreads
+    out: ['outputFile', 'stdout', 'stderr']   
+  tbi:
+    run: ../tools/gatk/gatk_tbi.cwl
+    in:
+      inputFile: filter/outputFile
+    out: ['outputFile', 'stdout', 'stderr']   
+  annotate:
+    run: ../tools/gatk/gatk_annotate.cwl
+    in:
+      inputBamFile: markdup/markdup_output
+      inputVcfFile: filter/outputFile
+      vcfIndexFile: tbi/outputFile
+      reference: reference
+      dict: dict
+      dbsnp: dbsnp
+
+    out: ['outputFile', 'stdout', 'stderr']   

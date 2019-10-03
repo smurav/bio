@@ -6,14 +6,11 @@ cwl:tool: ../../workflows/test_workflow.cwl
 nthreads: 6
 
 # fastp
-in1:
-  class: File
-  path: ../../../../run65_CSP_pcr_free_genome/test_R1_001.fastq
-  
-in2:
-  class: File
-  path: ../../../../run65_CSP_pcr_free_genome/test_R2_001.fastq
-  
+sample: test
+data_dir:
+  class: Directory
+  path: ../../../../run65_CSP_pcr_free_genome
+
 adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
 adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
 
@@ -26,4 +23,17 @@ hisat2_idx_basedir:
 
 hisat2_idx_basename: GCA_000001405.15_GRCh38_full_analysis_set
 
-hisat2_out_sam_name: test.sam
+#bcftools
+reference:
+  class: File
+  path: ../../../../genome_assemblies/ncbi-genomes-2019-09-06/GCA_000001405.15_GRCh38_full_analysis_set.fna
+    
+filter_expression: '%QUAL>=20'
+
+dbsnp:
+  class: File
+  path: ../../../../vcf/All_20180418.vcf.gz
+
+dict:
+  class: File
+  path: ../../../../genome_assemblies/ncbi-genomes-2019-09-06/GCA_000001405.15_GRCh38_full_analysis_set.dict

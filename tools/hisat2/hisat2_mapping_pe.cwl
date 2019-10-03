@@ -11,11 +11,14 @@ baseCommand: [hisat2]
 
 arguments:
   - prefix: -S
-    valueFrom: $(runtime.outdir)/$(inputs.out_sam_name)
+    valueFrom: $(runtime.outdir)/$(inputs.sample + '.sam')
   - prefix: -x
     valueFrom: $(inputs.hisat2_idx_basedir.path)/$(inputs.hisat2_idx_basename)
 
 inputs:
+  sample:
+    type: string
+    label: Идентификатор образца
   hisat2_idx_basedir:
     label: "Path to the directory the index for the reference genome are in"
     doc: "Path to the directory the index for the index files, such as .1.ht2 / etc exist."
@@ -36,11 +39,6 @@ inputs:
     type: File
     inputBinding:
       prefix: "-2"
-  out_sam_name:
-    label: "Name of file to write SAM alignments to"
-    doc: "Name of file to write SAM alignments to (default: out.sam)"
-    type: string?
-    default: out.sam
   dta:
     label: "Report alignments tailored for transcript assemblers"
     doc: "Report alignments tailored for transcript assemblers including StringTie. With this option, HISAT2 requires longer anchor lengths for de novo discovery of splice sites. This leads to fewer alignments with short-anchors, which helps transcript assemblers improve significantly in computation and memory usage."
@@ -73,11 +71,12 @@ outputs:
   - id: hisat2_sam
     type: File
     outputBinding:
-      glob: $(inputs.out_sam_name)
+      glob: $(inputs.sample + '.sam')
   - id: stdout
     type: stdout
   - id: stderr
     type: stderr
-          
+requirements:
+  - class: InlineJavascriptRequirement
 stdout: hisat2.stdout
 stderr: hisat2.stderr

@@ -1,0 +1,8 @@
+#!/usr/bin/env cwl-runner
+
+cwl:tool: prepare.cwl
+
+reference:
+  class: File
+  path: ../../../genome_assemblies/ncbi-genomes-2019-09-06/GCA_000001405.15_GRCh38_full_analysis_set.fna
+
