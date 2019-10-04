@@ -33,7 +33,3 @@ filter_expression: '%QUAL>=20'
 dbsnp:
   class: File
   path: ../../../../vcf/All_20180418.vcf.gz
-
-dict:
-  class: File
-  path: ../../../../genome_assemblies/ncbi-genomes-2019-09-06/GCA_000001405.15_GRCh38_full_analysis_set.dict

@@ -26,7 +26,6 @@ arguments:
   - position: 3
     prefix: '-O'
     valueFrom: $(inputs.reference.nameroot + '.dict')
-
     
 hints:
   - class: DockerRequirement

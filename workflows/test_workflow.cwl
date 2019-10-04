@@ -24,13 +24,14 @@ inputs:
     type: int
   reference:
     type: File
-    secondaryFiles: .fai
+    secondaryFiles: 
+      - .fai
+      - $(inputs.reference.nameroot + '.dict')
   filter_expression:
     type: string
   dbsnp:
     type: File
-  dict:
-    type: File
+    secondaryFiles: .tbi
 outputs:
   #fastp_out1_cleaned_fq:
     #type: File
@@ -115,9 +116,9 @@ outputs:
   bcftools_call_stderr:
     type: File
     outputSource: call/stderr
-#  filter_output:
-#    type: File
-#    outputSource: filter/outputFile
+  filter_output:
+    type: File
+    outputSource: filter/outputFile
   filter_stdout:
     type: File
     outputSource: filter/stdout
@@ -186,6 +187,13 @@ steps:
     in:
       inputFile: sort/bam_sorted
     out: ['markdup_output', 'markdup_metrics', 'markdup_index', 'stdout', 'stderr']
+    
+  bam_bai:
+    run: ../tools/gatk/gatk_bam_bai.cwl
+    in:
+      bam: markdup/markdup_output
+      bai: markdup/markdup_index
+    out: ['bam_with_index']
 
 # Поиск вариантов
   mpileup:
@@ -211,15 +219,21 @@ steps:
     run: ../tools/gatk/gatk_tbi.cwl
     in:
       inputFile: filter/outputFile
-    out: ['outputFile', 'stdout', 'stderr']   
+    out: ['outputFile', 'stdout', 'stderr']
+  vcf_tbi:
+    run: ../tools/gatk/gatk_vcf_tbi.cwl
+    in:
+      vcf: filter/outputFile
+      tbi: tbi/outputFile
+    out: ['vcf_with_index']
   annotate:
     run: ../tools/gatk/gatk_annotate.cwl
     in:
-      inputBamFile: markdup/markdup_output
-      inputVcfFile: filter/outputFile
-      vcfIndexFile: tbi/outputFile
+      inputBamFile: bam_bai/bam_with_index
+      inputVcfFile: vcf_tbi/vcf_with_index
       reference: reference
-      dict: dict
       dbsnp: dbsnp
-
     out: ['outputFile', 'stdout', 'stderr']   
+
+requirements:
+  - class: InlineJavascriptRequirement

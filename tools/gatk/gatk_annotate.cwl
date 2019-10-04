@@ -6,23 +6,19 @@ baseCommand:
   - gatk
   - VariantAnnotator
 inputs:
-  - id: vcfIndexFile
-    type: 'File'
-  - id: dict
-    type: 'File'
   - id: inputBamFile
-    type: 'File'
+    type: File?
     inputBinding:
       position: 1
       prefix: '-I'
     doc: One or more input SAM or BAM files to analyze. Must be coordinate sorted.
-#    secondaryFiles: .tbi
+    secondaryFiles: $(inputs.inputBamFile.nameroot + '.bai')
   - id: reference
     type: 'File'
     inputBinding:
       position: 2
       prefix: '-R'
-#    secondaryFiles: .dict
+    secondaryFiles: $(inputs.reference.nameroot + '.dict')
     doc: reference.fasta
   - id: inputVcfFile
     type: 'File'
@@ -30,12 +26,14 @@ inputs:
       position: 3
       prefix: '-V'
     doc: Input VCF file
+    secondaryFiles: .tbi
   - id: dbsnp
     type: 'File'
     inputBinding:
       position: 5
       prefix: '-D'
     doc: dbSNP file  
+    secondaryFiles: .tbi
 outputs:
   - id: outputFile
     type: File
@@ -52,7 +50,8 @@ arguments:
     prefix: '-O'
     valueFrom: $(inputs.inputVcfFile.nameroot + '.annotated.vcf')
   - position: 6
-    prefix: '--list'
+    prefix: '-A'
+    valueFrom: Coverage
 hints:
   - class: DockerRequirement
     dockerPull: 'broadinstitute/gatk:latest'
