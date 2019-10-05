@@ -12,5 +12,5 @@ vcf:
 
 chain:
   class: File
-  path: ../../../vcf/clinvar/vcf_GRCh38/b37ToHg38.over.chain
+  path: ./b37ToHg38.over.chain
 #  path: b37tohg38.chain
