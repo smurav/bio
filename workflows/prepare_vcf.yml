@@ -1,0 +1,16 @@
+#!/usr/bin/env cwl-runner
+
+cwl:tool: prepare_vcf.cwl
+
+reference: 
+  class: File
+  path: ../../../genome_assemblies/ncbi-genomes-2019-09-06/GCA_000001405.15_GRCh38_full_analysis_set.fna
+
+vcf:
+  class: File
+  path: ../../../vcf/clinvar/vcf_GRCh38/clinvar_20191003.vcf.gz
+
+chain:
+  class: File
+  path: ../../../vcf/clinvar/vcf_GRCh38/b37ToHg38.over.chain
+#  path: b37tohg38.chain

@@ -13,7 +13,7 @@ arguments:
   - prefix: -S
     valueFrom: $(runtime.outdir)/$(inputs.sample + '.sam')
   - prefix: -x
-    valueFrom: $(inputs.hisat2_idx_basedir)/$(inputs.hisat2_idx_basename)
+    valueFrom: $(inputs.hisat2_idx_basedir.path)/$(inputs.hisat2_idx_basename)
 
 inputs:
   sample:

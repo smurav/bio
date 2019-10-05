@@ -104,15 +104,15 @@ outputs:
     outputSource: markdup/stderr
     
 # Поиск вариантов
-#  bcftools_mpileup_output:
-#    type: File
-#    outputSource: mpileup/outputFile
+  bcftools_mpileup_output:
+    type: File
+    outputSource: mpileup/outputFile
   bcftools_mpileup_stderr:
     type: File
     outputSource: mpileup/stderr
-#  bcftools_call_output:
-#    type: File
-#    outputSource: call/outputFile
+  bcftools_call_output:
+    type: File
+    outputSource: call/outputFile
   bcftools_call_stderr:
     type: File
     outputSource: call/stderr
