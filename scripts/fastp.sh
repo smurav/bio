@@ -32,7 +32,7 @@ if [ "$(docker ps -aq -f status=exited -f name=${CONTAINER})" ]; then
 fi
 
 VOLUME=$(printf %q "$SAMPLEPATH")
-CMD="docker run --name ${CONTAINER} -v ${VOLUME}:/data pgcbioinfo/fastp:latest fastp -i /data/${1}_R1_001.fastq.gz -I /data/${1}_R2_001.fastq.gz -o /data/${CONTAINER}/${1}_R1_001.${CONTAINER}.fastq.gz -O /data/${CONTAINER}/${1}_R2_001.${CONTAINER}.fastq.gz -j /data/${CONTAINER}/${1}.${CONTAINER}.json -h /data/${CONTAINER}/${1}.${CONTAINER}.html --adapter_fasta=/data/${1}.adapters.fa -f 6 -t 4 -w 7 -c"
+CMD="docker run --name ${CONTAINER} -v ${VOLUME}:/data pgcbioinfo/fastp:latest fastp -i /data/${1}_R1_001.fastq.gz -I /data/${1}_R2_001.fastq.gz -o /data/${CONTAINER}/${1}_R1_001.${CONTAINER}.fastq.gz -O /data/${CONTAINER}/${1}_R2_001.${CONTAINER}.fastq.gz -j /data/${CONTAINER}/${1}.${CONTAINER}.json -h /data/${CONTAINER}/${1}.${CONTAINER}.html --adapter_fasta=/data/${1}.adapters.fa -f 6 -t 4 -w 7"
 echo $CMD>>"${LOGFILE}"
 bash -c "$CMD" 1>"${OUTFILE}" 2>"${ERRFILE}"
 

@@ -1,0 +1,11 @@
+#!/usr/bin/env cwl-runner
+
+cwl:tool: prepare_ref.cwl
+
+packed_reference: 
+  class: File
+  path: ../../../genome_assemblies/ncbi-genomes-2019-09-06/GCA_000001405.15_GRCh38_full_analysis_set.fna.gz
+
+packed_h2_index:
+  class: File
+  path: ../../../genome_assemblies/ncbi-genomes-2019-09-06/GCA_000001405.15_GRCh38_full_analysis_set.fna.hisat2_index.tar.gz

@@ -16,10 +16,10 @@ outputs:
     type: File
     outputBinding:
       glob: '*.dict'
-  - id: stdout
-    type: stdout
-  - id: stderr
-    type: stderr
+  #- id: stdout
+    #type: stdout
+  #- id: stderr
+    #type: stderr
     
 label: Creates a sequence dictionary for a reference sequence. 
 arguments:
@@ -30,7 +30,7 @@ arguments:
 hints:
   - class: DockerRequirement
     dockerPull: 'broadinstitute/gatk:latest'
-stdout: gatk.dict.stdout
-stderr: gatk.dict.stderr
+#stdout: gatk.dict.stdout
+#stderr: gatk.dict.stderr
 requirements:
   - class: InlineJavascriptRequirement

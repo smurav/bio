@@ -53,4 +53,5 @@ bash -c "$CMD" 1>"${OUTFILE}" 2>"${ERRFILE}"
 
 END=$(date +%s)
 RUNTIME=$((END-START))
-eval 'echo $(date -ud "@${RUNTIME}" +"Выполнение заняло %H часов %M минут %S секунд")' | tee -a "${LOGFILE}"
+eval 'echo $(date -ud "@${RUNTIME}" +"Выполнение заняло %H часов %M \
+минут %S секунд")' | tee -a "${LOGFILE}"
