@@ -14,7 +14,8 @@ hints:
     coresMin: 1
     ramMin: 20000
   DockerRequirement:
-    dockerPull: kerstenbreuer/samtools:1.7
+    dockerPull: quay.io/biocontainers/samtools:1.9--h46bd0b3_0
+#    dockerPull: kerstenbreuer/samtools:1.7
 
 baseCommand: ["samtools", "index"]
 arguments:

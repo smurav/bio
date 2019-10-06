@@ -13,6 +13,9 @@ outputs:
   reference:
     type: File
     outputSource: extract_ref/output
+  faidx:
+    type: File[]
+    outputSource: build_fai/result
   dict:
     type: File
     outputSource: build_dict/dictFile
@@ -25,6 +28,11 @@ steps:
     in:
       archive: packed_reference
     out: ['output']
+  build_fai:
+    run: ../tools/samtools/samtools_faidx.cwl
+    in:
+      reference: extract_ref/output
+    out: ['result']  
   build_dict:
     run: ../tools/gatk/gatk_dict.cwl
     in:

@@ -30,7 +30,8 @@ arguments:
     valueFrom: $(inputs.sam.nameroot + '.bam')
 requirements:
   - class: DockerRequirement
-    dockerPull: 'biocontainers/samtools:v1.7.0_cv4'
+    dockerPull: quay.io/biocontainers/samtools:1.9--h46bd0b3_0
+#    dockerPull: 'biocontainers/samtools:v1.7.0_cv4'
   - class: InlineJavascriptRequirement
 stdout: samtools.fixmate.stdout
 stderr: samtools.fixmate.stderr

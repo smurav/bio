@@ -6,15 +6,15 @@ baseCommand:
   - gatk
   - LiftoverVcf
 arguments:  
-  - position: 0
-    prefix: '--java-options'
-    valueFrom: '-Xmx4G'
+#  - position: 0
+#    prefix: '--java-options'
+#    valueFrom: '-Xmx4G'
   - position: 4
     prefix: '--REJECT'
-    valueFrom: $(inputs.vcf.nameroot + '.rejected.vcf.gz')
+    valueFrom: $(inputs.vcf.nameroot + '.rejected.vcf')
   - position: 5
     prefix: '--OUTPUT'
-    valueFrom: $(inputs.vcf.nameroot + '.lifted.vcf.gz')
+    valueFrom: $(inputs.vcf.nameroot + '.lifted.vcf')
   - position: 6
     prefix: '--MAX_RECORDS_IN_RAM'
     valueFrom: '400000'
@@ -42,11 +42,11 @@ outputs:
   - id: lifted
     type: File
     outputBinding:
-      glob: '*.lifted.vcf.gz'
+      glob: '*.lifted.vcf'
   - id: rejected
     type: File
     outputBinding:
-      glob: '*.rejected.vcf.gz'
+      glob: '*.rejected.vcf'
   - id: stdout
     type: stdout
   - id: stderr
