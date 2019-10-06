@@ -1,0 +1,40 @@
+#!/usr/bin/env cwl-runner
+
+cwl:tool: ../../workflows/test_workflow.cwl
+
+# common
+nthreads: 6
+
+# fastp
+sample: 8980-1_S17
+data_dir:
+  class: Directory
+  path: ../../../../run65_CSP_pcr_free_genome
+
+adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+fastp_custom_args: -f 6 -F 6 -t 4 -T 4
+
+#hisat2
+hisat2_idx_basedir:
+  class: Directory
+  path: ../../../../genome_assemblies/GRCh38.p2
+
+hisat2_idx_basename: GCF_000001405.28_GRCh38.p2_genomic
+
+#bcftools
+reference:
+  class: File
+  path: ../../../../genome_assemblies/GRCh38.p2/GCF_000001405.28_GRCh38.p2_genomic.fna
+    
+filter_expression: '%QUAL>=20'
+
+#dbsnp:
+#  class: File
+#  path: ../../../../vcf/clinvar/vcf_GRCh38/clinvar_20191003.vcf.gz
+#  path: ../../../../vcf/GATK/common_all_20180418.vcf.gz
+  
+clinvar:
+  class: File
+  path: ../../../../vcf/clinvar/vcf_GRCh38/clinvar_20191003.vcf.gz

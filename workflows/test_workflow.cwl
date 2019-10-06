@@ -30,6 +30,9 @@ inputs:
   filter_expression:
     type: string
   dbsnp:
+    type: File?
+    secondaryFiles: .tbi
+  clinvar:
     type: File
     secondaryFiles: .tbi
 outputs:
@@ -233,7 +236,14 @@ steps:
       inputVcfFile: vcf_tbi/vcf_with_index
       reference: reference
       dbsnp: dbsnp
+      clinvar: clinvar
     out: ['outputFile', 'stdout', 'stderr']   
 
 requirements:
   - class: InlineJavascriptRequirement
+hints:
+  ResourceRequirement:
+    coresMin: 6
+    coresMax: 6
+    ramMin: 10000
+    ramMax: 14000 
