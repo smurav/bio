@@ -35,6 +35,8 @@ inputs:
   clinvar:
     type: File
     secondaryFiles: .tbi
+  select:
+    type: string
 outputs:
   #fastp_out1_cleaned_fq:
     #type: File
@@ -88,6 +90,7 @@ outputs:
   samtools_sort_stderr:
     type: File
     outputSource: sort/stderr
+  
     
 # Результаты удаления дубликатов и индекс
   gatk_markdup_output:
@@ -145,7 +148,25 @@ outputs:
     outputSource: annotate/stdout
   annotate_stderr:
     type: File
-    outputSource: annotate/stderr         
+    outputSource: annotate/stderr   
+  gatk_select_output:
+    type: File
+    outputSource: select/outputVcfFile
+  gatk_select_stdout:
+    type: File
+    outputSource: select/stdout
+  gatk_select_stderr:
+    type: File
+    outputSource: select/stderr
+  gatk_table_output:
+    type: File
+    outputSource: table/tableFile
+  gatk_table_stdout:
+    type: File
+    outputSource: table/stdout
+  gatk_table_stderr:
+    type: File
+    outputSource: table/stderr
 steps:
   clean:
     run: ../tools/fastp/fastp_pe.cwl
@@ -238,7 +259,19 @@ steps:
       dbsnp: dbsnp
       clinvar: clinvar
     out: ['outputFile', 'stdout', 'stderr']   
-
+  select:
+    run: ../tools/gatk/gatk_select.cwl
+    in:
+      reference: reference
+      inputVcfFile: annotate/outputFile
+      select: select
+    out: ['outputVcfFile', 'stdout', 'stderr']    
+  table:
+    run: ../tools/gatk/gatk_table.cwl
+    in:
+      reference: reference
+      inputVcfFile: select/outputVcfFile
+    out: ['tableFile', 'stdout', 'stderr']   
 requirements:
   - class: InlineJavascriptRequirement
 hints:
