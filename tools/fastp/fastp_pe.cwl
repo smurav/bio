@@ -1,7 +1,5 @@
 class: CommandLineTool
 cwlVersion: v1.0
-$namespaces:
-  sbg: 'https://www.sevenbridges.com/'
 id: fastp
 baseCommand:
   - fastp
@@ -38,25 +36,21 @@ outputs:
     type: File
     outputBinding:
       glob: $(inputs.sample + '_R1.cleaned')
-    'sbg:fileTypes': FastQ
   - id: out1_unpaired_fq
     label: Unpaired forward read
     type: File
     outputBinding:
       glob: $(inputs.sample + '_R1.unpaired')
-    'sbg:fileTypes': FastQ
   - id: out2_cleaned_fq
     label: Cleaned reverse read
     type: File
     outputBinding:
       glob: $(inputs.sample + '_R2.cleaned')
-    'sbg:fileTypes': FastQ
   - id: out2_unpaired_fq
     label: Unpaired reverse read
     type: File
     outputBinding:
       glob: $(inputs.sample + '_R2.unpaired')
-    'sbg:fileTypes': FastQ
   - id: report_json
     label: Report in json file
     type: File
