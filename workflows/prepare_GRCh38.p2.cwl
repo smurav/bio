@@ -21,7 +21,7 @@ outputs:
     outputSource: build_dict/dictFile
   h2_index:
     type: File[]
-    outputSource: h2_index/index_files
+    outputSource: index/index_files
 steps:
   extract_ref:
     run: ../tools/arc/gunzip.cwl
@@ -38,7 +38,7 @@ steps:
     in:
       reference: extract_ref/output
     out: ['dictFile']
-  h2_index:
+  index:
     run: ../tools/hisat2/hisat2_index.cwl
     in:
       reference_fasta: extract_ref/output
