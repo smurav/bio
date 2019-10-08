@@ -93,9 +93,9 @@ outputs:
   
     
 # Результаты удаления дубликатов и индекс
-  gatk_markdup_output:
-    type: File
-    outputSource: markdup/markdup_output
+#  gatk_markdup_output:
+#    type: File
+#    outputSource: markdup/markdup_output
   gatk_markdup_metrics:
     type: File
     outputSource: markdup/markdup_metrics
@@ -110,9 +110,9 @@ outputs:
     outputSource: markdup/stderr
     
 # Поиск вариантов
-  bcftools_mpileup_output:
-    type: File
-    outputSource: mpileup/outputFile
+#  bcftools_mpileup_output:
+#    type: File
+#    outputSource: mpileup/outputFile
   bcftools_mpileup_stderr:
     type: File
     outputSource: mpileup/stderr
