@@ -4,7 +4,14 @@ baseCommand:
   - bcftools
   - view
   - '-Oz'
+  - 'm2'
+  - 'M2'
 arguments:  
+# Use -m2 -M2 -v snps to only view biallelic SNPs.
+# https://gatkforums.broadinstitute.org/gatk/discussion/6696/unparsable-vcf-record-with-allele
+  - position 1:
+    prefix: -v
+    valueFrom: snps
   - position: 4
     prefix: '--output-file'
     valueFrom: $(inputs.inputFile.nameroot + '.filtered.vcf.gz')
