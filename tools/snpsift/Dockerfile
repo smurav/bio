@@ -2,10 +2,10 @@ FROM anapsix/alpine-java:8
 
 ENV package_version 4.4
 
-ADD http://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip /app
+ADD https://sourceforge.net/projects/snpeff/files/snpEff_latest_core.zip /opt
 
-RUN cd /app/ \
+RUN cd /opt/ \
          && unzip snpEff_latest_core.zip \
          && rm snpEff_latest_core.zip
 
-ENTRYPOINT ["java", "-jar", "/app/snpEff/SnpSift.jar"]
+ENTRYPOINT ["java", "-jar", "/opt/snpEff/SnpSift.jar"]
