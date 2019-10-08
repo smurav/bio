@@ -6,7 +6,7 @@ cwl:tool: ../../workflows/test_workflow.cwl
 nthreads: 6
 
 # fastp
-sample: test
+sample: 102551_S18_L001
 data_dir:
   class: Directory
   path: ../../../../run65_CSP_pcr_free_genome
@@ -14,7 +14,7 @@ data_dir:
 adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
 adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
 
-#fastp_custom_args: -f 6 -F 6 -t 4 -T 4
+fastp_custom_args: -f 6 -F 6 -t 4 -T 4
 
 #hisat2
 hisat2_idx_basedir:
@@ -39,5 +39,4 @@ clinvar:
   class: File
   path: ../../../../vcf/clinvar/vcf_GRCh38/clinvar_20191003.vcf.gz
 
-select: QUAL>40
-
+select: clinvar.CLNSIG
