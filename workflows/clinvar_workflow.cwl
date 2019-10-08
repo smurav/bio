@@ -91,11 +91,10 @@ outputs:
     type: File
     outputSource: sort/stderr
   
-    
 # Результаты удаления дубликатов и индекс
-#  gatk_markdup_output:
-#    type: File
-#    outputSource: markdup/markdup_output
+  gatk_markdup_output:
+    type: File
+    outputSource: markdup/markdup_output
   gatk_markdup_metrics:
     type: File
     outputSource: markdup/markdup_metrics
@@ -116,9 +115,9 @@ outputs:
   bcftools_mpileup_stderr:
     type: File
     outputSource: mpileup/stderr
-  bcftools_call_output:
-    type: File
-    outputSource: call/outputFile
+#  bcftools_call_output:
+#    type: File
+#    outputSource: call/outputFile
   bcftools_call_stderr:
     type: File
     outputSource: call/stderr
