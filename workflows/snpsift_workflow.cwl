@@ -139,13 +139,10 @@ outputs:
     outputSource: tbi/stderr    
   annotate_output:
     type: File
-    outputSource: VariantAnnotator/outputFile
-  annotate_stdout:
-    type: File
-    outputSource: VariantAnnotator/stdout
+    outputSource: snpsift/outputVcfFile
   annotate_stderr:
     type: File
-    outputSource: VariantAnnotator/stderr   
+    outputSource: snpsift/stderr   
   gatk_select_output:
     type: File
     outputSource: SelectVariants/outputVcfFile
@@ -247,20 +244,17 @@ steps:
       vcf: filter/outputFile
       tbi: tbi/outputFile
     out: ['vcf_with_index']
-  VariantAnnotator:
-    run: ../tools/gatk/gatk_annotate.cwl
+  snpsift:
+    run: ../tools/snpsift/snpsift_annotate.cwl
     in:
-      inputBamFile: bam_bai/bam_with_index
       inputVcfFile: vcf_tbi/vcf_with_index
-      reference: reference
-      dbsnp: dbsnp
-      clinvar: clinvar
-    out: ['outputFile', 'stdout', 'stderr']   
+      database: clinvar
+    out: ['outputVcfFile', 'stderr']   
   SelectVariants:
     run: ../tools/gatk/gatk_select.cwl
     in:
       reference: reference
-      inputVcfFile: VariantAnnotator/outputFile
+      inputVcfFile: snpsift/outputVcfFile
       select: select
     out: ['outputVcfFile', 'stdout', 'stderr']    
   VariantsToTable:

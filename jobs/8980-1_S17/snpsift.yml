@@ -1,0 +1,20 @@
+#!/usr/bin/env cwl-runner
+
+cwl:tool: ../../workflows/snpsift.cwl
+
+# common
+nthreads: 6
+
+inputVcfFile:
+  class: File
+  path: ./8980-1_S17.sorted.markdup.call.filtered.vcf.gz
+
+reference:
+  class: File
+  path: ../../../../genome_assemblies/GRCh38.p2/GCF_000001405.28_GRCh38.p2_genomic.fna
+  
+clinvar:
+  class: File
+  path: ../../../../vcf/clinvar/vcf_GRCh38/clinvar_20191003.vcf.gz
+
+select: clinvar.CLNSIG
