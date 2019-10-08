@@ -30,7 +30,7 @@ arguments:
 hints:
   - class: DockerRequirement
     dockerPull: 'broadinstitute/gatk:latest'
-stdout: gatk.dict.stdout
-stderr: gatk.dict.stderr
+stdout: gatk.tbi.stdout
+stderr: gatk.tbi.stderr
 requirements:
   - class: InlineJavascriptRequirement
