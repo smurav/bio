@@ -141,31 +141,31 @@ outputs:
     outputSource: tbi/stderr    
   annotate_output:
     type: File
-    outputSource: annotate/outputFile
+    outputSource: VariantAnnotator/outputFile
   annotate_stdout:
     type: File
-    outputSource: annotate/stdout
+    outputSource: VariantAnnotator/stdout
   annotate_stderr:
     type: File
-    outputSource: annotate/stderr   
+    outputSource: VariantAnnotator/stderr   
   gatk_select_output:
     type: File
-    outputSource: select/outputVcfFile
+    outputSource: SelectVariants/outputVcfFile
   gatk_select_stdout:
     type: File
-    outputSource: select/stdout
+    outputSource: SelectVariants/stdout
   gatk_select_stderr:
     type: File
-    outputSource: select/stderr
+    outputSource: SelectVariants/stderr
   gatk_table_output:
     type: File
-    outputSource: table/tableFile
+    outputSource: VariantsToTable/tableFile
   gatk_table_stdout:
     type: File
-    outputSource: table/stdout
+    outputSource: VariantsToTable/stdout
   gatk_table_stderr:
     type: File
-    outputSource: table/stderr
+    outputSource: VariantsToTable/stderr
 steps:
   clean:
     run: ../tools/fastp/fastp_pe.cwl
@@ -249,7 +249,7 @@ steps:
       vcf: filter/outputFile
       tbi: tbi/outputFile
     out: ['vcf_with_index']
-  annotate:
+  VariantAnnotator:
     run: ../tools/gatk/gatk_annotate.cwl
     in:
       inputBamFile: bam_bai/bam_with_index
@@ -258,18 +258,18 @@ steps:
       dbsnp: dbsnp
       clinvar: clinvar
     out: ['outputFile', 'stdout', 'stderr']   
-  select:
+  SelectVariants:
     run: ../tools/gatk/gatk_select.cwl
     in:
       reference: reference
       inputVcfFile: annotate/outputFile
       select: select
     out: ['outputVcfFile', 'stdout', 'stderr']    
-  table:
+  VariantsToTable:
     run: ../tools/gatk/gatk_table.cwl
     in:
       reference: reference
-      inputVcfFile: select/outputVcfFile
+      inputVcfFile: SelectVariants/outputVcfFile
     out: ['tableFile', 'stdout', 'stderr']   
 requirements:
   - class: InlineJavascriptRequirement
