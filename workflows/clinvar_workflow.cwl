@@ -262,7 +262,7 @@ steps:
     run: ../tools/gatk/gatk_select.cwl
     in:
       reference: reference
-      inputVcfFile: annotate/outputFile
+      inputVcfFile: VariantAnnotator/outputFile
       select: select
     out: ['outputVcfFile', 'stdout', 'stderr']    
   VariantsToTable:
