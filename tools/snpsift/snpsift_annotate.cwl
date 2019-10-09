@@ -1,7 +1,10 @@
 class: CommandLineTool
 cwlVersion: v1.0
 baseCommand:
-  - Annotate
+  - "java"
+  - "-jar"
+  - "/opt/snpEff/SnpSift.jar"
+  - "Annotate"
 inputs:
   - id: database
     type: File
@@ -18,7 +21,8 @@ outputs:
     type: stderr
 requirements:
   - class: DockerRequirement
-    dockerPull: alexcoppe/snpsift
+    dockerPull: maxulysse/snpeff
+#    dockerPull: alexcoppe/snpsift
   - class: InlineJavascriptRequirement
 stdout: $(inputs.inputVcfFile.nameroot + '.snpsift.vcf')
 stderr: snpsift.annotate.stderr
