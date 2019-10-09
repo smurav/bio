@@ -67,6 +67,16 @@ inputs:
     type: int
     inputBinding:
       prefix: --threads
+  rg_id:
+    label: "Set the read group ID"
+    type: string?
+    inputBinding:
+      prefix:  --rg-id
+  rg:
+    label: "Add <text> as a field on the @RG header line."
+    type: string?
+    inputBinding:
+      prefix:  --rg
 
 outputs:
   - id: hisat2_sam

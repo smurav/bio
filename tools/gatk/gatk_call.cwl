@@ -17,18 +17,19 @@ inputs:
     inputBinding:
       position: 4
       prefix: '-I'
+    secondaryFiles: .bai
   #- id: dbsnp
     #type: File
     #inputBinding:
       #position: 5
       #prefix: '--dbsnp'
     #secondaryFiles: .tbi
-  - id: clinvar
-    type: File
-    inputBinding:
-      position: 6
-      prefix: '--comp'
-    secondaryFiles: .tbi
+  #- id: clinvar
+    #type: File
+    #inputBinding:
+      #position: 6
+      #prefix: '--comp'
+    #secondaryFiles: .tbi
 outputs:
   - id: vcf
     type: File
