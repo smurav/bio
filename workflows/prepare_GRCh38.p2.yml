@@ -1,9 +1,9 @@
 #!/usr/bin/env cwl-runner
 
-cwl:tool: prepare_GRCh38.p2.cwl
+cwl:tool: prepare_ref.cwl
 
 packed_reference: 
   class: File
-  path: /home/sergey/ssd/genome_assemblies/GRCh38.p2/GCF_000001405.28_GRCh38.p2_genomic.fna.gz
+  path: ../../../genome_assemblies/GRCh38.p2/GCF_000001405.28_GRCh38.p2_genomic.fna.gz
 
 index_basename: GCF_000001405.28_GRCh38.p2_genomic

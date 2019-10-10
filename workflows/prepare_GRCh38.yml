@@ -1,0 +1,9 @@
+#!/usr/bin/env cwl-runner
+
+cwl:tool: prepare_ref.cwl
+
+packed_reference: 
+  class: File
+  path: ../../../genome_assemblies/GRCh38/Homo_sapiens_assembly38.fasta.gz
+
+index_basename: Homo_sapiens_assembly38

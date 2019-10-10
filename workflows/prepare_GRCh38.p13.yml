@@ -1,6 +1,6 @@
 #!/usr/bin/env cwl-runner
 
-cwl:tool: prepare_ref.cwl
+cwl:tool: unpack_ref.cwl
 
 packed_reference: 
   class: File
