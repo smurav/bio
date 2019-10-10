@@ -8,7 +8,7 @@ inputs:
 outputs:
   bam_with_index:
     type: File
-    secondaryFiles: $(inputs.bai)
+    secondaryFiles: $(inputs.bam.nameroot + '.bai')
 expression: >
         ${
         var ret = inputs.bam;

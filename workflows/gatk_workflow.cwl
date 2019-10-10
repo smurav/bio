@@ -25,18 +25,16 @@ inputs:
     secondaryFiles: 
       - .fai
       - $(inputs.reference.nameroot + '.dict')
-  rg_id:
-    type: string
   rg:
     type: string
   filter_expression:
     type: string
+  clinvar:
+    type: File?
+    secondaryFiles: '.tbi'
   dbsnp:
     type: File?
-    secondaryFiles: .tbi
-  clinvar:
-    type: File
-    secondaryFiles: .tbi
+    secondaryFiles: '.tbi'
   select:
     type: string
 outputs:
@@ -92,7 +90,6 @@ outputs:
   samtools_sort_stderr:
     type: File
     outputSource: sort/stderr
-  
 # Результаты удаления дубликатов и индекс
   gatk_markdup_output:
     type: File
@@ -109,6 +106,15 @@ outputs:
   gatk_markdup_stderr:
     type: File
     outputSource: markdup/stderr
+  #gatk_validate_stdout:
+    #type: File
+    #outputSource: validate/stdout
+  #gatk_validate_out:
+    #type: File
+    #outputSource: validate/outputFile
+  #gatk_validate_stderr:
+    #type: File
+    #outputSource: validate/stderr
   gatk_call_vcf:
     type: File
     outputSource: call/vcf
@@ -118,6 +124,24 @@ outputs:
   gatk_call_stderr:
     type: File
     outputSource: call/stderr
+  gatk_select_output:
+    type: File
+    outputSource: SelectVariants/outputVcfFile
+  gatk_select_stdout:
+    type: File
+    outputSource: SelectVariants/stdout
+  gatk_select_stderr:
+    type: File
+    outputSource: SelectVariants/stderr
+  gatk_table_output:
+    type: File
+    outputSource: VariantsToTable/tableFile
+  gatk_table_stdout:
+    type: File
+    outputSource: VariantsToTable/stdout
+  gatk_table_stderr:
+    type: File
+    outputSource: VariantsToTable/stderr
 steps:
   clean:
     run: ../tools/fastp/fastp_pe.cwl
@@ -141,7 +165,7 @@ steps:
       fq2: clean/out2_cleaned_fq
       sample: sample
       nthreads: nthreads
-      rg_id: rg_id
+      rg_id: sample
       rg: rg
     out: ['hisat2_sam', 'stdout', 'stderr']
 
@@ -164,21 +188,40 @@ steps:
     in:
       inputFile: sort/bam_sorted
     out: ['markdup_output', 'markdup_metrics', 'markdup_index', 'stdout', 'stderr']
-    
+  #validate:
+    #run: ../tools/gatk/gatk_validate.cwl
+    #in:
+      #inputFile: markdup/markdup_output
+      #reference: reference
+    #out: ['outputFile', 'stdout', 'stderr']
   bam_bai:
     run: ../tools/gatk/gatk_bam_bai.cwl
     in:
       bam: markdup/markdup_output
       bai: markdup/markdup_index
     out: ['bam_with_index']
-
 # Поиск вариантов
   call:
     run: ../tools/gatk/gatk_call.cwl
     in:
-      bam: markdup/markdup_output
+      bam: bam_bai/bam_with_index
       reference: reference
-    out: ['vcf', 'sdtout', 'stderr']
+      dbsnp: dbsnp
+      clinvar: clinvar
+    out: ['vcf', 'stdout', 'stderr']
+  SelectVariants:
+    run: ../tools/gatk/gatk_select.cwl
+    in:
+      reference: reference
+      inputVcfFile: call/vcf
+      select: select
+    out: ['outputVcfFile', 'stdout', 'stderr']    
+  VariantsToTable:
+    run: ../tools/gatk/gatk_table.cwl
+    in:
+      reference: reference
+      inputVcfFile: SelectVariants/outputVcfFile
+    out: ['tableFile', 'stdout', 'stderr']  
 requirements:
   - class: InlineJavascriptRequirement
 hints:

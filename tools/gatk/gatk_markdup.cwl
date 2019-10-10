@@ -14,9 +14,9 @@ inputs:
 outputs:
   - id: markdup_output
     type: File
+    secondaryFiles: $(inputs.inputFile.nameroot + '.markdup.bai')
     outputBinding:
       glob: $(inputs.inputFile.nameroot + '.markdup.bam')
-    secondaryFiles: .bai
   - id: markdup_metrics
     type: File
     outputBinding:

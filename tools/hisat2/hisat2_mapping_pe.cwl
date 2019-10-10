@@ -11,10 +11,11 @@ hints:
 baseCommand: [hisat2]
 
 arguments:
-  - prefix: -S
+  - prefix: '-S'
     valueFrom: $(runtime.outdir)/$(inputs.sample + '.sam')
-  - prefix: -x
+  - prefix: '-x'
     valueFrom: $(inputs.hisat2_idx_basedir.path)/$(inputs.hisat2_idx_basename)
+#  - prefix: '--remove-chrname'
 
 inputs:
   sample:
