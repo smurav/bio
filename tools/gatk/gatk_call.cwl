@@ -19,14 +19,14 @@ inputs:
       prefix: '-I'
     secondaryFiles: $(inputs.bam.nameroot + '.bai')
   - id: dbsnp
-    type: File?
+    type: File
     inputBinding:
       position: 5
       prefix: '--dbsnp'
     doc: dbSNP file  
     secondaryFiles: '.tbi'
   - id: clinvar
-    type: File?
+    type: File
     inputBinding:
       position: 6
       prefix: '--comp'
