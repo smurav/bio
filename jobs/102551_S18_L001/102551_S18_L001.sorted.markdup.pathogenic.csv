@@ -1,0 +1,20 @@
+RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
+1064039	5635	chr20	23637790	C	T	Pathogenic	single_nucleotide_variant	Age-related_macular_degeneration_11
+10800597	427755	chr1	198898955	G	A	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+10800598	427756	chr1	198900385	T	C	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+12156163	433023	chr8	11757260	C	T	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+12406470	427753	chr1	198826991	C	T	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+1804495	9785	chrX	106034370	C	A	Pathogenic	single_nucleotide_variant	['Thyroxine-binding_globulin', '_variant_P']
+1805010	14666	chr16	27344882	A	G	['Pathogenic', '_protective']	single_nucleotide_variant	['Acquired_immunodeficiency_syndrome', '_slow_progression_to|Atopy', '_resistance_to']
+2272783	562	chr18	57571588	A	G	Pathogenic	single_nucleotide_variant	Jaundice|Erythema|Erythropoietic_protoporphyria
+351855	16326	chr5	177093242	G	A	Pathogenic	single_nucleotide_variant	Cancer_progression_and_tumor_cell_motility
+35329108	2021	chr5	1216785	G	A	Pathogenic	single_nucleotide_variant	['Hyperglycinuria|Iminoglycinuria', '_digenic']
+3729851	433020	chr8	11755333	G	A	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+3733402	12037	chr4	186236880	G	A	Pathogenic	single_nucleotide_variant	Prekallikrein_deficiency
+3735819	433016	chr8	11748803	T	C	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+530719719	189229	chr15	45101227	TGAAC	T	Pathogenic/Likely_pathogenic	Deletion	Nongoitrous_Euthyroid_Hyperthyrotropinemia|Inborn_genetic_diseases|not_provided|Familial_thyroid_dyshormonogenesis
+55960271	17545	chr7	143351678	C	T	Pathogenic/Likely_pathogenic	single_nucleotide_variant	['Muscular_Diseases|EMG:_myopathic_abnormalities|Myotonia_congenita|Congenital_myotonia', '_autosomal_recessive_form|Congenital_myotonia', '_autosomal_dominant_form|not_provided']
+60639710	427754	chr1	198898549	G	T	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+745379	433015	chr8	11758186	A	G	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+80357711	37560	chr17	43091495	CT	C	Pathogenic	Deletion	['Hereditary_breast_and_ovarian_cancer_syndrome|Familial_cancer_of_breast|Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer', '_familial_1|not_provided']
+804290	433024	chr8	11759327	G	A	Pathogenic	single_nucleotide_variant	Congenital_heart_disease

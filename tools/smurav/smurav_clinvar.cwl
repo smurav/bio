@@ -13,10 +13,22 @@ inputs:
       position: 2
     label: clinvar.vcf
 outputs:
+  - id: all
+    type: File
+    outputBinding:
+      glob: '*.all.csv'
   - id: pathogenic
     type: File
     outputBinding:
-      glob: '*.csv'
+      glob: '*.pathogenic.csv'
+  - id: likely_pathogenic
+    type: File
+    outputBinding:
+      glob: '*.likely_pathogenic.csv'
+  - id: risk_factors
+    type: File
+    outputBinding:
+      glob: '*.risk_factors.csv'
   - id: stdout
     type: stdout
   - id: stderr
@@ -24,5 +36,5 @@ outputs:
 hints:
   DockerRequirement:
     dockerPull: 'smurav/clinvar'
-stdout: clinvar.stdout
-
+stdout: smurav.clinvar.stdout
+stderr: smurav.clinvar.stderr

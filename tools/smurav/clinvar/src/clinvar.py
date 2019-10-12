@@ -7,7 +7,7 @@ import gzip
 import pandas as pd
 
 VCF_HEADER = ['CHROM', 'POS', 'ID', 'REF', 'ALT', 'QUAL', 'FILTER', 'INFO']
-
+REPORT_COLUMNS = ['IDclinvar', 'CHROM', 'POS', 'REF', 'ALT', 'CLNSIG', 'CLNVC', 'CLNDN']
 
 def dataframe(filename, large=True):
     """Open an optionally gzipped VCF file and return a pandas.DataFrame with
@@ -52,7 +52,7 @@ def lines(filename):
     """
     fn_open = gzip.open if filename.endswith('.gz') else open
 
-    with fn_open(filename) as fh:
+    with fn_open(filename, mode='rt') as fh:
         for line in fh:
             if line.startswith('#'):
                 continue
@@ -107,7 +107,7 @@ def _count_comments(filename):
     """
     comments = 0  # type: int
     fn_open = gzip.open if filename.endswith('.gz') else open
-    with fn_open(filename) as fh:
+    with fn_open(filename, mode='rt') as fh:
         for line in fh:
             if line.startswith('#'):
                 comments += 1
@@ -126,16 +126,44 @@ def main():
     sample.drop(index, inplace=True)
     sample['RS'] = sample['ID'].str[2:]
     sample.set_index('RS', inplace=True)
+    
     clinvar = dataframe(args.clinvar, False)
     print('В файле {0} описано {1} вариантов'.format(args.clinvar, len(clinvar.index)))
-    pathogenic = clinvar.loc[clinvar['CLNSIG'] == 'Pathogenic'].set_index('RS').astype(str)
-    print('Всего патогенных вариантов: {}'.format(len(pathogenic.index)))
-    result = pathogenic.join(sample, how='inner', lsuffix='.clinvar')
-    print('В файле {0} Обнаружено {1} патогенных вариантов'.format(args.sample, len(result.index)))
-    res_filename = os.path.basename(args.sample) + ".pathogenic.csv"
-    print('Результат записан в файл {}'.format(res_filename))
-    #result.to_csv(res_filename, sep='\t', encoding='utf-8')
-    result[['CHROM', 'POS', 'REF', 'ALT', 'CLNSIG', 'CLNVC', 'CLNDN', 'GENEINFO', 'CLNDISDB']].to_csv(res_filename, sep='\t', encoding='utf-8')
+    clinvar.set_index('RS', inplace=True)
+    result = clinvar.join(sample, how='inner', lsuffix='clinvar')
+    full_len = len(result.index)
+    print('В файле {0} найдено соответствие {1} идентификаторов вариантов из баз dbSNP и ClinVar'.\
+          format(args.sample, full_len))
+
+    ref = result.loc[result.REFclinvar == result.REF]
+    ref_len = len(ref.index)
+    if (ref_len < full_len):
+        print('Отфильтровано {0} вариантов из-за несовпадения значений поля REF'. \
+              format(full_len-ref_len))
+        
+    alt = ref.loc[ref.ALTclinvar == ref.ALT]
+    alt_len = len(alt.index)
+    if (alt_len < ref_len):
+        print('Отфильтровано {0} вариантов из-за несовпадения значений поля ALT'. \
+              format(ref_len-alt_len))
+    
+    full_filename = os.path.splitext(args.sample)[0] + ".all.csv"
+    result.to_csv(full_filename, sep='\t', encoding='utf-8')
+    
+    pathogenic = alt.loc[alt['CLNSIG'].astype(str).str.contains('Pathogenic')]
+    print('Патогенных вариантов: {}'.format(len(pathogenic.index)))
+    pathogenic_filename = os.path.splitext(args.sample)[0] + ".pathogenic.csv"
+    pathogenic[REPORT_COLUMNS].to_csv(pathogenic_filename, sep='\t', encoding='utf-8')
+
+    likely_pathogenic = alt.loc[alt['CLNSIG'].astype(str).str.contains('Likely_pathogenic')]
+    print('Вероятно патогенных вариантов: {}'.format(len(likely_pathogenic.index)))
+    likely_pathogenic_filename = os.path.splitext(args.sample)[0] + ".likely_pathogenic.csv"
+    likely_pathogenic[REPORT_COLUMNS].to_csv(likely_pathogenic_filename, sep='\t', encoding='utf-8')
+
+    risk_factors = alt.loc[alt['CLNSIG'].astype(str).str.contains('risk_factor')]
+    print('Факторы риска: {}'.format(len(risk_factors.index)))
+    risk_factors_filename = os.path.splitext(args.sample)[0] + ".risk_factors.csv"
+    risk_factors[REPORT_COLUMNS].to_csv(risk_factors_filename, sep='\t', encoding='utf-8')
 
 if __name__ == "__main__":
     main()

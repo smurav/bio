@@ -30,10 +30,10 @@ inputs:
   filter_expression:
     type: string
   clinvar:
-    type: File?
+    type: File
     secondaryFiles: '.tbi'
   dbsnp:
-    type: File?
+    type: File
     secondaryFiles: '.tbi'
   select:
     type: string

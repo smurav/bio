@@ -1,0 +1,38 @@
+#!/usr/bin/env cwl-runner
+
+cwl:tool: ../../workflows/clinvar_workflow.cwl
+
+nthreads: 6
+
+sample: 10444-1_S20
+data_dir:
+  class: Directory
+  path: ../../../../run65_CSP_pcr_free_genome
+
+adapter1: AGATCGGAAGAGCACACGTCTGAACTCCAGTCA
+adapter2: AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT
+
+fastp_custom_args: -f 6 -F 6 -t 4 -T 4
+
+hisat2_idx_basedir:
+  class: Directory
+  path: ../../../../genome_assemblies/GRCh38
+
+hisat2_idx_basename: Homo_sapiens_assembly38
+
+rg: 'SM:10444-1_S20'
+
+reference:
+  class: File
+  path: ../../../../genome_assemblies/GRCh38/Homo_sapiens_assembly38.fasta
+    
+filter_expression: '%QUAL>=20'
+
+dbsnp:
+  class: File
+  path: ../../../../genome_assemblies/GRCh38/dbsnp_146.hg38.vcf.gz
+  
+clinvarVcf:
+  class: File
+  path: ../../../../vcf/clinvar_20191003_chr.vcf
+

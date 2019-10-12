@@ -36,6 +36,6 @@ clinvar:
   class: File
   path: ../../../../vcf/clinvar_20191003_chr.vcf.gz
 
-#select: CLNSIG
-select: DB
+select: CLNSIG
+#select: DB
 

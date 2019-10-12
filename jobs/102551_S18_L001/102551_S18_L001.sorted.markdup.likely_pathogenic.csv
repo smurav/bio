@@ -1,0 +1,8 @@
+RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
+148182439	522773	chr1	34761640	G	A	Likely_pathogenic	single_nucleotide_variant	Erythrokeratodermia_variabilis
+2853508	140592	chrM	15326	A	G	Likely_pathogenic	single_nucleotide_variant	Familial_cancer_of_breast
+41273519	544821	chr1	158619331	G	A	Likely_pathogenic	single_nucleotide_variant	Spherocytosis_type_3
+4895441	132871	chr6	135105435	A	G	Likely_pathogenic	single_nucleotide_variant	Fetal_hemoglobin_quantitative_trait_locus_2
+530719719	189229	chr15	45101227	TGAAC	T	Pathogenic/Likely_pathogenic	Deletion	Nongoitrous_Euthyroid_Hyperthyrotropinemia|Inborn_genetic_diseases|not_provided|Familial_thyroid_dyshormonogenesis
+55960271	17545	chr7	143351678	C	T	Pathogenic/Likely_pathogenic	single_nucleotide_variant	['Muscular_Diseases|EMG:_myopathic_abnormalities|Myotonia_congenita|Congenital_myotonia', '_autosomal_recessive_form|Congenital_myotonia', '_autosomal_dominant_form|not_provided']
+61754030	99155	chr1	94048910	T	C	Likely_pathogenic	single_nucleotide_variant	Cone-rod_dystrophy|not_provided

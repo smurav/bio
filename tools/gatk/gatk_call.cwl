@@ -25,12 +25,6 @@ inputs:
       prefix: '--dbsnp'
     doc: dbSNP file  
     secondaryFiles: '.tbi'
-  - id: clinvar
-    type: File
-    inputBinding:
-      position: 6
-      prefix: '--comp'
-    secondaryFiles: '.tbi'
 outputs:
   - id: vcf
     type: File
