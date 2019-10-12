@@ -35,6 +35,6 @@ outputs:
     type: stderr
 hints:
   DockerRequirement:
-    dockerPull: 'smurav/clinvar'
+    dockerPull: 'smurav/clinvar:v0.2'
 stdout: smurav.clinvar.stdout
 stderr: smurav.clinvar.stderr
