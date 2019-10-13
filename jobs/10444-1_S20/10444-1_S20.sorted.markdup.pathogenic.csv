@@ -1,0 +1,18 @@
+RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
+10503425	433017	chr8	11748855	G	C	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+10800597	427755	chr1	198898955	G	A	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+10800598	427756	chr1	198900385	T	C	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+12406470	427753	chr1	198826991	C	T	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+146973734	30593	chr12	7690389	C	T	Pathogenic	single_nucleotide_variant	['Microphthalmia', '_isolated_7']
+1805010	14666	chr16	27344882	A	G	['Pathogenic', '_protective']	single_nucleotide_variant	['Acquired_immunodeficiency_syndrome', '_slow_progression_to|Atopy', '_resistance_to']
+2272783	562	chr18	57571588	A	G	Pathogenic	single_nucleotide_variant	Jaundice|Erythema|Erythropoietic_protoporphyria
+351855	16326	chr5	177093242	G	A	Pathogenic	single_nucleotide_variant	Cancer_progression_and_tumor_cell_motility
+35329108	2021	chr5	1216785	G	A	Pathogenic	single_nucleotide_variant	['Hyperglycinuria|Iminoglycinuria', '_digenic']
+3735819	433016	chr8	11748803	T	C	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+376663785	284172	chr3	33051989	A	C	Pathogenic/Likely_pathogenic	single_nucleotide_variant	['Inborn_genetic_diseases|GM1_gangliosidosis|Mucopolysaccharidosis', '_MPS-IV-B|Infantile_GM1_gangliosidosis|GM1_gangliosidosis_type_2|Gangliosidosis_GM1_type_3|not_provided']
+386834119	56699	chr8	99832368	G	T	Pathogenic	single_nucleotide_variant	Cohen_syndrome
+60639710	427754	chr1	198898549	G	T	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+745379	433015	chr8	11758186	A	G	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+774676466	12934	chr17	30237266	AGGGCTGCAGGGGGGATGCTGGGGGTGCAGGGGAGATGCTGGGG	A	Pathogenic	Deletion	['Serotonin_transporter_activity', '_increased/decreased']
+80357094	55418	chr17	43063881	G	C	Pathogenic	single_nucleotide_variant	['Breast-ovarian_cancer', '_familial_1']
+9660525	427752	chr1	198807802	C	A	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
