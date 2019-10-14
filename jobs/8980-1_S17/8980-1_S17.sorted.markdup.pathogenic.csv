@@ -1,0 +1,24 @@
+RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
+10509305	1720	chr10	68885620	A	C	Pathogenic	single_nucleotide_variant	Preeclampsia/eclampsia_4
+1064039	5635	chr20	23637790	C	T	Pathogenic	single_nucleotide_variant	Age-related_macular_degeneration_11
+10800597	427755	chr1	198898955	G	A	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+10800598	427756	chr1	198900385	T	C	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+12156163	433023	chr8	11757260	C	T	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+121907955	3895	chr15	72345461	C	T	Pathogenic/Likely_pathogenic	single_nucleotide_variant	['Tay-Sachs_disease|Gm2-gangliosidosis', '_juvenile']
+12406470	427753	chr1	198826991	C	T	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+12458	433026	chr8	11759731	A	T	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+138326449	139560	chr11	116830638	G	A	['Pathogenic', '_protective']	single_nucleotide_variant	Coronary_heart_disease|Hyperalphalipoproteinemia_2
+1804495	9785	chrX	106034370	C	A	Pathogenic	single_nucleotide_variant	['Thyroxine-binding_globulin', '_variant_P']
+1805010	14666	chr16	27344882	A	G	['Pathogenic', '_protective']	single_nucleotide_variant	['Acquired_immunodeficiency_syndrome', '_slow_progression_to|Atopy', '_resistance_to']
+200972872	431810	chr3	48576249	C	T	Pathogenic/Likely_pathogenic	single_nucleotide_variant	['Pretibial_epidermolysis_bullosa|Recessive_dystrophic_epidermolysis_bullosa|Dominant_dystrophic_epidermolysis_bullosa_with_absence_of_skin|Generalized_dominant_dystrophic_epidermolysis_bullosa|Epidermolysis_bullosa_pruriginosa|Nail_disorder', '_nonsyndromic_congenital', '_8|Transient_bullous_dermolysis_of_the_newborn|not_provided']
+2236379	586982	chr10	6485181	G	A	Pathogenic	single_nucleotide_variant	Inflammatory_bowel_disease_1
+2904552	4011	chr22	18918451	C	T	['Pathogenic', '_risk_factor']	single_nucleotide_variant	Proline_dehydrogenase_deficiency|Schizophrenia_4
+35329108	2021	chr5	1216785	G	A	Pathogenic	single_nucleotide_variant	['Hyperglycinuria|Iminoglycinuria', '_digenic']
+3733402	12037	chr4	186236880	G	A	Pathogenic	single_nucleotide_variant	Prekallikrein_deficiency
+3735819	433016	chr8	11748803	T	C	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+5030737	14352	chr10	52771482	G	A	Pathogenic	single_nucleotide_variant	Mannose-binding_protein_deficiency
+60639710	427754	chr1	198898549	G	T	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+62642937	628	chr12	102843706	G	A	Pathogenic	single_nucleotide_variant	['Marfanoid_habitus_and_intellectual_disability|Hyperphenylalaninemia', '_non-pku|Phenylketonuria|not_provided']
+745379	433015	chr8	11758186	A	G	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+804290	433024	chr8	11759327	G	A	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+9660525	427752	chr1	198807802	C	A	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
