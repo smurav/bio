@@ -34,5 +34,5 @@ dbsnp:
   
 clinvarVcf:
   class: File
-  path: ../../../../vcf/clinvar_20191003_chr.vcf
+  path: ../../../../vcf/clinvar_20191003.vcf
 

@@ -16,7 +16,7 @@ outputs:
   - id: all
     type: File
     outputBinding:
-      glob: '*.all.csv'
+      glob: '*.full.csv'
   - id: pathogenic
     type: File
     outputBinding:
