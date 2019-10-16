@@ -1,0 +1,21 @@
+#!/usr/bin/env cwl-runner
+
+cwl:tool: ../../workflows/call_workflow.cwl
+
+nthreads: 7
+
+reference:
+  class: File
+  path: ../../../../genome_assemblies/GRCh38/Homo_sapiens_assembly38.fasta
+    
+dbsnp:
+  class: File
+  path: ../../../../genome_assemblies/GRCh38/dbsnp_146.hg38.vcf.gz
+  
+clinvarVcf:
+  class: File
+  path: ../../../../vcf/clinvar_20191003.vcf.gz
+
+bam:  
+  class: File
+  path: ./8214_S5.sorted.markdup.bam
