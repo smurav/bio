@@ -146,26 +146,23 @@ def main():
     if (alt_len < ref_len):
         print('Отфильтровано {0} вариантов из-за несовпадения значений поля ALT'. \
               format(ref_len-alt_len))
-        
-    basename = os.path.basename(args.sample)
-    rootname = os.path.splitext(basename)[0]
     
-    full_filename = rootname + ".full.csv"
+    full_filename = os.path.splitext(args.sample)[0] + ".all.csv"
     result.to_csv(full_filename, sep='\t', encoding='utf-8')
     
     pathogenic = alt.loc[alt['CLNSIG'].astype(str).str.contains('Pathogenic')]
     print('Патогенных вариантов: {}'.format(len(pathogenic.index)))
-    pathogenic_filename = rootname + ".pathogenic.csv"
+    pathogenic_filename = os.path.splitext(args.sample)[0] + ".pathogenic.csv"
     pathogenic[REPORT_COLUMNS].to_csv(pathogenic_filename, sep='\t', encoding='utf-8')
 
     likely_pathogenic = alt.loc[alt['CLNSIG'].astype(str).str.contains('Likely_pathogenic')]
     print('Вероятно патогенных вариантов: {}'.format(len(likely_pathogenic.index)))
-    likely_pathogenic_filename = rootname + ".likely_pathogenic.csv"
+    likely_pathogenic_filename = os.path.splitext(args.sample)[0] + ".likely_pathogenic.csv"
     likely_pathogenic[REPORT_COLUMNS].to_csv(likely_pathogenic_filename, sep='\t', encoding='utf-8')
 
     risk_factors = alt.loc[alt['CLNSIG'].astype(str).str.contains('risk_factor')]
     print('Факторы риска: {}'.format(len(risk_factors.index)))
-    risk_factors_filename = rootname + ".risk_factors.csv"
+    risk_factors_filename = os.path.splitext(args.sample)[0] + ".risk_factors.csv"
     risk_factors[REPORT_COLUMNS].to_csv(risk_factors_filename, sep='\t', encoding='utf-8')
 
 if __name__ == "__main__":
