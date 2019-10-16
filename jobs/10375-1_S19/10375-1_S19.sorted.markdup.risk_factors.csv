@@ -1,0 +1,29 @@
+RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
+1048990	6796	chr14	35292469	C	G	risk_factor	single_nucleotide_variant	Myocardial_infarction
+1050501	5467	chr1	161674008	T	C	['protective', '_risk_factor']	single_nucleotide_variant	['Systemic_lupus_erythematosus', '_susceptibility_to|Malaria', '_resistance_to']
+1051931	7916	chr6	46705206	A	G	risk_factor	single_nucleotide_variant	['Asthma_and_atopy', '_susceptibility_to|not_provided']
+1053874	16852	chr16	3657746	G	A	risk_factor	single_nucleotide_variant	['Systemic_lupus_erythematosus', '_susceptibility_to']
+10954213	3397	chr7	128949373	G	A	risk_factor	single_nucleotide_variant	Systemic_lupus_erythematosus_10
+11196205	7415	chr10	113047288	G	C	risk_factor	single_nucleotide_variant	Diabetes_mellitus_type_2
+12150220	4163	chr17	5582047	A	T	risk_factor	single_nucleotide_variant	Vitiligo-associated_multiple_autoimmune_disease_susceptibility_1
+12255372	7414	chr10	113049143	G	T	risk_factor	single_nucleotide_variant	Diabetes_mellitus_type_2
+13266634	1000	chr8	117172544	C	T	risk_factor	single_nucleotide_variant	['DIABETES_MELLITUS', '_TYPE_2', '_SUSCEPTIBILITY_TO']
+1421085	217824	chr16	53767042	T	C	risk_factor	single_nucleotide_variant	['OBESITY_(BMIQ14)', '_SUSCEPTIBILITY_TO']
+1617640	16602	chr7	100719675	C	A	risk_factor	single_nucleotide_variant	Microvascular_complications_of_diabetes_2
+1801197	17636	chr7	93426441	A	G	risk_factor	single_nucleotide_variant	Bone_mineral_density_quantitative_trait_locus_15
+180195	29906	chr8	132865378	A	G	risk_factor	single_nucleotide_variant	Autoimmune_thyroid_disease_3
+1805097	8820	chr13	109782884	C	T	risk_factor	single_nucleotide_variant	['DIABETES', '_TYPE_II', '_SUSCEPTIBILITY_TO']
+2010963	12223	chr6	43770613	C	G	risk_factor	single_nucleotide_variant	Microvascular_complications_of_diabetes_1
+20541	14673	chr5	132660272	A	G	risk_factor	single_nucleotide_variant	['Allergic_rhinitis', '_susceptibility_to|Asthma', '_susceptibility_to']
+2073711	6312	chr15	65201874	A	G	risk_factor	single_nucleotide_variant	['Lumbar_disc_disease', '_susceptibility_to']
+2165241	14362	chr15	73929861	T	C	risk_factor	single_nucleotide_variant	['Exfoliation_syndrome', '_susceptibility_to']
+2435357	13952	chr10	43086608	T	C	['Benign', '_risk_factor']	single_nucleotide_variant	Hirschsprung_disease|Hirschsprung_disease_1|not_specified
+2488457	8910	chr1	113872746	G	C	risk_factor	single_nucleotide_variant	['Diabetes_mellitus', '_insulin-dependent', '_susceptibility_to']
+279836	16220	chr4	46337053	T	A	risk_factor	single_nucleotide_variant	['Alcoholism', '_susceptibility_to']
+324981	2192	chr7	34778501	A	T	risk_factor	single_nucleotide_variant	['Asthma-related_traits', '_susceptibility_to', '_2']
+3766379	4895	chr1	160837925	T	C	risk_factor	single_nucleotide_variant	Rheumatoid_arthritis
+3792267	5093	chr2	240591757	G	A	risk_factor	single_nucleotide_variant	Diabetes_mellitus_type_2
+4402960	2435	chr3	185793899	G	T	risk_factor	single_nucleotide_variant	Diabetes_mellitus_type_2
+4833095	8361	chr4	38798089	T	C	risk_factor	single_nucleotide_variant	Leprosy_5
+606231248	64687	chr10	17849701	G	A	risk_factor	single_nucleotide_variant	Multibacillary_leprosy
+9406328	12713	chr6	169234915	G	A	risk_factor	single_nucleotide_variant	['Lumbar_disc_herniation', '_susceptibility_to']

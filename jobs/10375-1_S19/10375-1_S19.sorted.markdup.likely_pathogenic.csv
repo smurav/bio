@@ -1,0 +1,3 @@
+RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
+214088	127108	chr11	17276578	C	G	Likely_pathogenic	single_nucleotide_variant	not_provided
+2853508	140592	chrM	15326	A	G	Likely_pathogenic	single_nucleotide_variant	Familial_cancer_of_breast
