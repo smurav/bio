@@ -1,0 +1,6 @@
+RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
+2046210	155877	chr6	151627231	G	A	Likely_pathogenic	single_nucleotide_variant	Estrogen_resistance
+214088	127108	chr11	17276578	C	G	Likely_pathogenic	single_nucleotide_variant	not_provided
+2853508	140592	chrM	15326	A	G	Likely_pathogenic	single_nucleotide_variant	Familial_cancer_of_breast
+4895441	132871	chr6	135105435	A	G	Likely_pathogenic	single_nucleotide_variant	Fetal_hemoglobin_quantitative_trait_locus_2
+6929137	155873	chr6	151615542	G	A	Likely_pathogenic	single_nucleotide_variant	Estrogen_resistance

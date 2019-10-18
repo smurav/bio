@@ -1,0 +1,21 @@
+RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
+1024611	14207	chr17	34252769	A	G	['Pathogenic', '_risk_factor']	single_nucleotide_variant	['Spina_bifida', '_susceptibility_to|Coronary_artery_disease', '_modifier_of|Coronary_artery_disease', '_development_of', '_in_hiv|Mycobacterium_tuberculosis', '_susceptibility_to']
+10800597	427755	chr1	198898955	G	A	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+10800598	427756	chr1	198900385	T	C	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+12735723	8704	chr1	161169143	C	G	Pathogenic	single_nucleotide_variant	['Variegate_porphyria', '_homozygous']
+1566734	8690	chr11	48123823	A	C	Pathogenic	single_nucleotide_variant	Carcinoma_of_colon
+1805010	14666	chr16	27344882	A	G	['Pathogenic', '_protective']	single_nucleotide_variant	['Acquired_immunodeficiency_syndrome', '_slow_progression_to|Atopy', '_resistance_to']
+2236379	586982	chr10	6485181	G	A	Pathogenic	single_nucleotide_variant	Inflammatory_bowel_disease_1
+28919570	29898	chr12	6816241	C	T	Pathogenic	single_nucleotide_variant	Okt4_epitope_deficiency
+3214759	41988	chr2	208146053	GC	G	Pathogenic	Deletion	['Cataract_39', '_multiple_types']
+34599082	18396	chr1	159205704	C	T	Pathogenic	single_nucleotide_variant	['DUFFY_BLOOD_GROUP_SYSTEM', '_FY(bwk)_PHENOTYPE']
+351855	16326	chr5	177093242	G	A	Pathogenic	single_nucleotide_variant	Cancer_progression_and_tumor_cell_motility
+35329108	2021	chr5	1216785	G	A	Pathogenic	single_nucleotide_variant	['Hyperglycinuria|Iminoglycinuria', '_digenic']
+3733402	12037	chr4	186236880	G	A	Pathogenic	single_nucleotide_variant	Prekallikrein_deficiency
+3735819	433016	chr8	11748803	T	C	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+387907235	35553	chr8	38146036	G	A	Pathogenic	single_nucleotide_variant	Cholesterol_monooxygenase_(side-chain_cleaving)_deficiency
+5110	17905	chr11	116820918	C	A	Pathogenic	single_nucleotide_variant	['APOLIPOPROTEIN_A-IV_POLYMORPHISM', '_APOA4*1/APOA4*2']
+60639710	427754	chr1	198898549	G	T	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+61199332	12321	chr8	11573132	C	T	Pathogenic	single_nucleotide_variant	['Maturity-onset_diabetes_of_the_young', '_type_11']
+721048	1364	chr2	62904596	G	A	Pathogenic	single_nucleotide_variant	['Prostate_cancer', '_hereditary', '_12']
+80357868	17673	chr17	43091771	TAGAC	T	Pathogenic	Microsatellite	['Ovarian_Neoplasms|Hereditary_breast_and_ovarian_cancer_syndrome|Familial_cancer_of_breast|Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer', '_familial_1|Breast_and/or_ovarian_cancer|breast_cancer|not_provided']
