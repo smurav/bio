@@ -1,5 +1,4 @@
 RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
-<<<<<<< HEAD
 1024611	14207	chr17	34252769	A	G	['Pathogenic', '_risk_factor']	single_nucleotide_variant	['Spina_bifida', '_susceptibility_to|Coronary_artery_disease', '_modifier_of|Coronary_artery_disease', '_development_of', '_in_hiv|Mycobacterium_tuberculosis', '_susceptibility_to']
 10800597	427755	chr1	198898955	G	A	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
 10800598	427756	chr1	198900385	T	C	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
@@ -12,8 +11,3 @@ RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
 60639710	427754	chr1	198898549	G	T	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
 745379	433015	chr8	11758186	A	G	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
 804290	433024	chr8	11759327	G	A	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
-=======
-141935493	488359	chr17	5033250	C	T	Pathogenic	single_nucleotide_variant	Vitamin_B2_deficiency
-1805010	14666	chr16	27344882	A	G	['Pathogenic', '_protective']	single_nucleotide_variant	['Acquired_immunodeficiency_syndrome', '_slow_progression_to|Atopy', '_resistance_to']
-3735819	433016	chr8	11748803	T	C	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
->>>>>>> f8b5ec49327b5265a6b6cfab71229ea1a1bdf364
