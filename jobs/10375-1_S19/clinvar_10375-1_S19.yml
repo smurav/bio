@@ -26,8 +26,6 @@ reference:
   class: File
   path: ../../../../genome_assemblies/GRCh38/Homo_sapiens_assembly38.fasta
     
-filter_expression: '%QUAL>=30'
-
 dbsnp:
   class: File
   path: ../../../../genome_assemblies/GRCh38/dbsnp_146.hg38.vcf.gz
