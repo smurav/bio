@@ -1,0 +1,18 @@
+RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
+1024611	14207	chr17	34252769	A	G	['Pathogenic', '_risk_factor']	single_nucleotide_variant	['Spina_bifida', '_susceptibility_to|Coronary_artery_disease', '_modifier_of|Coronary_artery_disease', '_development_of', '_in_hiv|Mycobacterium_tuberculosis', '_susceptibility_to']
+118020901	12634	chr10	31521854	A	C	Pathogenic	single_nucleotide_variant	['Corneal_dystrophy', '_Fuchs_endothelial', '_6']
+12156163	433023	chr8	11757260	C	T	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+121908680	6195	chr22	38112212	A	C	Pathogenic/Likely_pathogenic	single_nucleotide_variant	Iron_accumulation_in_brain|Inborn_genetic_diseases|Infantile_neuroaxonal_dystrophy|Neurodegeneration_with_brain_iron_accumulation_2b|Parkinson_disease_14|PLA2G6-associated_neurodegeneration|not_provided
+139428292	30464	chr1	145927447	C	T	Pathogenic	single_nucleotide_variant	Radial_aplasia-thrombocytopenia_syndrome|not_provided
+1566734	8690	chr11	48123823	A	C	Pathogenic	single_nucleotide_variant	Carcinoma_of_colon
+17261572	10792	chrX	120626774	A	T	Pathogenic	single_nucleotide_variant	Polyagglutinable_erythrocyte_syndrome
+1800450	14350	chr10	52771475	C	T	Pathogenic	single_nucleotide_variant	Mannose-binding_protein_deficiency
+1805010	14666	chr16	27344882	A	G	['Pathogenic', '_protective']	single_nucleotide_variant	['Acquired_immunodeficiency_syndrome', '_slow_progression_to|Atopy', '_resistance_to']
+351855	16326	chr5	177093242	G	A	Pathogenic	single_nucleotide_variant	Cancer_progression_and_tumor_cell_motility
+3735819	433016	chr8	11748803	T	C	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+5030737	14352	chr10	52771482	G	A	Pathogenic	single_nucleotide_variant	Mannose-binding_protein_deficiency
+5743289	4697	chr16	50722863	C	T	['Pathogenic', '_risk_factor']	single_nucleotide_variant	Inflammatory_bowel_disease_1|Blau_syndrome|Yao_syndrome
+61751374	7894	chr1	94043413	G	A	Pathogenic/Likely_pathogenic	single_nucleotide_variant	Retinitis_pigmentosa|Retinal_dystrophy|Macular_dystrophy|Stargardt_disease_1|Stargardt_disease|Cone-rod_dystrophy_3|Retinitis_pigmentosa_19|Age-related_macular_degeneration_2|ABCA4-Related_Disorders|not_provided
+745379	433015	chr8	11758186	A	G	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+774676466	12934	chr17	30237266	AGGGCTGCAGGGGGGATGCTGGGGGTGCAGGGGAGATGCTGGGG	A	Pathogenic	Deletion	['Serotonin_transporter_activity', '_increased/decreased']
+804290	433024	chr8	11759327	G	A	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
