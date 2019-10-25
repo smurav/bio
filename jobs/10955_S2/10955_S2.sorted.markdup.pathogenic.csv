@@ -1,0 +1,26 @@
+RS	IDclinvar	CHROM	POS	REF	ALT	CLNSIG	CLNVC	CLNDN
+1024611	14207	chr17	34252769	A	G	['Pathogenic', '_risk_factor']	single_nucleotide_variant	['Spina_bifida', '_susceptibility_to|Coronary_artery_disease', '_modifier_of|Coronary_artery_disease', '_development_of', '_in_hiv|Mycobacterium_tuberculosis', '_susceptibility_to']
+10800597	427755	chr1	198898955	G	A	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+10800598	427756	chr1	198900385	T	C	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+12406470	427753	chr1	198826991	C	T	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+12458	433026	chr8	11759731	A	T	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+1799945	10	chr6	26090951	C	G	['Pathogenic', '_other']	single_nucleotide_variant	Alzheimer's_disease|Variegate_porphyria|Familial_porphyria_cutanea_tarda|Hereditary_hemochromatosis|Microvascular_complications_of_diabetes_7|Transferrin_serum_level_quantitative_trait_locus_2|Hemochromatosis_type_1|Hemochromatosis_type_2|not_provided
+1805010	14666	chr16	27344882	A	G	['Pathogenic', '_protective']	single_nucleotide_variant	['Acquired_immunodeficiency_syndrome', '_slow_progression_to|Atopy', '_resistance_to']
+185790394	183250	chr6	1610202	C	T	Pathogenic	single_nucleotide_variant	not_provided
+2236379	586982	chr10	6485181	G	A	Pathogenic	single_nucleotide_variant	Inflammatory_bowel_disease_1
+28897672	17661	chr17	43106487	A	C	Pathogenic	single_nucleotide_variant	['Breast_carcinoma|Neoplasm_of_the_breast|Ovarian_Neoplasms|Hereditary_breast_and_ovarian_cancer_syndrome|Familial_cancer_of_breast|Hereditary_cancer-predisposing_syndrome|Breast-ovarian_cancer', '_familial_1|Pancreatic_cancer_4|FANCONI_ANEMIA', '_COMPLEMENTATION_GROUP_S|not_specified|not_provided']
+2904552	4011	chr22	18918451	C	T	['Pathogenic', '_risk_factor']	single_nucleotide_variant	Proline_dehydrogenase_deficiency|Schizophrenia_4
+351855	16326	chr5	177093242	G	A	Pathogenic	single_nucleotide_variant	Cancer_progression_and_tumor_cell_motility
+3733402	12037	chr4	186236880	G	A	Pathogenic	single_nucleotide_variant	Prekallikrein_deficiency
+3735819	433016	chr8	11748803	T	C	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+532781899	5285	chr1	27373179	AG	A	Pathogenic	Deletion	Immunodeficiency_due_to_ficolin_3_deficiency
+535089924	162203	chr18	79988580	ACGCCGTGCGTGCTGACGGCATGCGCGCGCGCTAG	A	Pathogenic	Deletion	Burn-McKeown_syndrome
+5743289	4697	chr16	50722863	C	T	['Pathogenic', '_risk_factor']	single_nucleotide_variant	Inflammatory_bowel_disease_1|Blau_syndrome|Yao_syndrome
+587777482	139533	chr16	10547590	C	T	Pathogenic	single_nucleotide_variant	['Nephrotic_syndrome', '_type_10']
+60639710	427754	chr1	198898549	G	T	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
+696217	5062	chr3	10289773	G	T	['Pathogenic', '_risk_factor']	single_nucleotide_variant	['Metabolic_syndrome', '_susceptibility_to|Obesity', '_age_at_onset_of']
+721048	1364	chr2	62904596	G	A	Pathogenic	single_nucleotide_variant	['Prostate_cancer', '_hereditary', '_12']
+745379	433015	chr8	11758186	A	G	Pathogenic	single_nucleotide_variant	Congenital_heart_disease
+764094665	265157	chr1	152304562	T	A	Pathogenic	single_nucleotide_variant	not_provided
+774676466	12934	chr17	30237266	AGGGCTGCAGGGGGGATGCTGGGGGTGCAGGGGAGATGCTGGGG	A	Pathogenic	Deletion	['Serotonin_transporter_activity', '_increased/decreased']
+9660525	427752	chr1	198807802	C	A	Pathogenic	single_nucleotide_variant	Acute_myeloid_leukemia_with_maturation
