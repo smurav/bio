@@ -1,9 +1,9 @@
 #!/usr/bin/env cwl-runner
 
-cwl:tool: prepare_ref.cwl
+cwl:tool: prepare_GRCh37.cwl
 
-packed_reference: 
+reference: 
   class: File
-  path: ../../../genome_assemblies/GRCh37/human_g1k_v37.fasta.gz
+  path: ../../../genome_assemblies/GRCh37/human_g1k_v37.fasta
 
 index_basename: human_g1k_v37
