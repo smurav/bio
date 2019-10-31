@@ -1,0 +1,16 @@
+#!/usr/bin/env cwl-runner
+
+cwl:tool: concordance_workflow.cwl
+
+reference: 
+  class: File
+  path: ../../../genome_assemblies/GRCh37/human_g1k_v37.fasta
+
+truth:
+  class: File
+  path: ../../../vcf/NA12878-NISTv2.19.vcf.gz
+
+eval:
+  class: File
+  path: ../../../vcf/vg_may.HG001.vcf.gz
+
