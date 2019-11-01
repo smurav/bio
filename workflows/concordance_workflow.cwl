@@ -15,6 +15,8 @@ inputs:
   truth:
     type: File
     secondaryFiles: '.tbi'
+  intervals:
+    type: File
 outputs:
   concordance_summary:
     type: File
@@ -32,6 +34,7 @@ steps:
       reference: reference
       truth: truth
       eval: eval
+      intervals: intervals
     out: ['summary', 'stdout', 'stderr']
 requirements:
   - class: InlineJavascriptRequirement

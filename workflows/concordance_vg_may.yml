@@ -4,13 +4,17 @@ cwl:tool: concordance_workflow.cwl
 
 reference: 
   class: File
-  path: ../../../genome_assemblies/GRCh37/human_g1k_v37.fasta
+  path: ../../../NA12878/GRCh37/human_g1k_v37.fasta
 
 truth:
   class: File
-  path: ../../../vcf/NA12878-NISTv2.19.vcf.gz
+  path: ../../../NA12878/NA12878-NISTv2.19.vcf.gz
+
+intervals:
+  class: File
+  path: ../../../NA12878/NA12878-NISTv2.19.bed
 
 eval:
   class: File
-  path: ../../../vcf/vg_may.HG001.vcf.gz
+  path: ../../../NA12878/vg_may.HG001.vcf.gz
 
